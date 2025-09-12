@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+/* In your CSS */
+body {
+  font-family: 'Lora', serif;
+}
+a {
+    color: rgb(174, 83, 50);
+}
+a :hover{
+  text-decoration: underline;
+}
+h1, h3,p,label ,h5 ,h6{
+    color: rgb(102, 60, 6);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-container {
+    position: relative;
+    border-radius: 12px;
+    background-color:rgba(255, 255, 255, 0.671) ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    height: 85vh;
+    gap: 1rem;
+   
+}
+.group {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.group h6 {
+  
+  font-weight: bold;
+  margin-right:100px ;
+}
+
+.group input {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+    margin-right:10px ;
+    height: 10px;
+    
+}
+.header {
+  margin-top: 2px;
+}
+.create {
+  color: rgb(85, 58, 36);
+  background-color: antiquewhite;
+  height: 30px;
+  width: 173px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.create:hover {
+  transition: all;
+  color:antiquewhite; 
+  background-color:rgb(85, 58, 36); 
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
