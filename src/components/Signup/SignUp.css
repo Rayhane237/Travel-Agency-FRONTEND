@@ -12,79 +12,106 @@
 }
 
 .overlay {
-  position: relative;
+  display: flex;
   z-index: 2;
   color: white;
-  text-align: center;
-  padding-top: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  
 }
-/* In your CSS */
-body {
-  font-family: 'Lora', serif;
-}
+
 a {
-    color: rgb(174, 83, 50);
+    color: rgb(215, 102, 61);
+    font-size: small;
 }
-a :hover{
-  text-decoration: underline;
-}
-h1, h3,p,label ,h5 ,h6{
+
+
+h1,label ,h4 ,h6{
     color: rgb(102, 60, 6);
   font-family: 'Montserrat', sans-serif;
 }
 
 .form-container {
-    position: relative;
+    position: absolute;
+    top: 10%;
     border-radius: 12px;
-    background-color:rgba(255, 255, 255, 0.671) ;
+    background-color:rgba(255, 255, 255, 0.836) ;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column ;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    height: 85vh;
+    max-height: 100vh;
+    max-width: 90vh;
+    overflow-x: auto;
+    width: 90%;
+    height: 90vh;
     gap: 1rem;
    
 }
-.group {
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.group h6 {
-  
-  font-weight: bold;
-  margin-right:100px ;
-}
-
-.group input {
-  padding: 0.6rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-    margin-right:10px ;
-    height: 10px;
+ input {
+  border-radius: 9px;
+  border: 1px solid rgb(69, 135, 130); 
+  height: 30px;
+  width: 180px;
     
 }
-.header {
-  margin-top: 2px;
+#item1  {
+  position: absolute;
+  top: 0%
 }
-.create {
-  color: rgb(85, 58, 36);
-  background-color: antiquewhite;
-  height: 30px;
-  width: 173px;
-  border-radius: 6px;
-  border: none;
-  margin-right: 10px;
-  font-family: 'Montserrat', sans-serif;
+#item2 {
+  
+  position: absolute;
+  top: 20%;
+}
+#item3 {
+  position: absolute;
+  top: 57%;
+}
+.item4 {
+  position: absolute;
+  top: 38%;
+}
+#item5 {
+  position: absolute;
+  top: 74%;
+}
+#item6 {
+  position: absolute;
+  top: 88%;
 }
 
-.create:hover {
-  transition: all;
-  color:antiquewhite; 
-  background-color:rgb(85, 58, 36); 
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+.sign-btn{
+    width: 178px;
+    height: 33px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 9px;
+}
+ .sign-btn:hover{
+    width: 170px;
+    height: 35px;
+    color: antiquewhite;
+    background-color: rgb(100, 66, 28);
+    border: none;
+    border-radius: 9px;
+}
+label {
+  font-size: small;
+}
+ p {
+  font-size: small;
+  color:rgb(101, 54, 25)
+ }
+ .item-text {
+  color:rgb(101, 54, 25);
+  margin-right: 56%;
+ }
+.err {
+  font-size: x-small;
+  margin-right: 20%;
 }

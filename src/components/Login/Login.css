@@ -18,7 +18,11 @@
   text-align: center;
   padding-top: 20%;
 }
-/* In your CSS */
+h4 {
+    color: red;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+}
 body {
   font-family: 'Lora', serif;
 }
@@ -31,29 +35,33 @@ h1, h3,p, button ,h5 ,h6{
 }
 
 .login-container {
-    position: relative;
-    top: 5px;
-    border-radius: 12px;
-    background-color:rgba(255, 255, 255, 0.671) ;
+    position: absolute;
+    top: 15%;
+    background-color:rgba(255, 255, 255, 0.817) ;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column ;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    height: 400px;
+   max-height: 100vh;
+   max-width: 90vh;
+   height: 90vh;
+    width: 90%;
+    gap: 1rem;
    
 }
 .login-btn{
-    margin-top: 100px;
-    width: 160px;
-    height: 35px;
+
+    width: 156px;
+    height: 32px;
     background-color: antiquewhite;
     border: none;
     border-radius: 9px;
 }
 .login-btn:hover{
-    margin-top: 100px;
-    width: 160px;
+   
+    width: 156px;
     height: 32px;
     color: antiquewhite;
     background-color: rgb(75, 48, 12);
@@ -67,15 +75,22 @@ input {
     border-radius: 9px;
     border: 1px solid rgb(69, 135, 130);
 }
-.item1  {
-    position: relative;
-    margin-top: 10px;
+header {
+    position: absolute;
+    top: 10%;
 }
+.item1 {
+    position: absolute;
+    top: 18%;
+}
+
 .item2 {
     position: absolute;
-    margin-top: 55px;
+    top: 38%;
 }
-p {
+
+.item3 {
     position: absolute;
-    right: 40px;
+    top: 77%;
 }
+

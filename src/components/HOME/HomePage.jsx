@@ -1,7 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import SignupOrLogin from '../Signup/Signup'
-import Login from '../Login/Login'
 import "./HomePage.css"
 
 
@@ -30,7 +28,7 @@ const HomePage = () => {
                   
                        <button onClick={navigateUser} className='login'>Sign up</button> 
                          <br />
-                      <button  onClick={navigateUserLogin}        className='sign-up'>Login</button>
+                      <button  onClick={navigateUserLogin} className='sign-up'>Login</button>
                     <p>   Travel the way you wish to go with Phnes Travels helping you discover, live and travel at your own pace. </p>
                   </div>
                   
