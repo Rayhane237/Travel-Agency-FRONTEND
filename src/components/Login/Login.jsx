@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import "./Login.css"
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 const Login = () => {
+  const navigate = useNavigate()
+  const passWordRef = useRef(null)
+  const emailRef = useRef(null)
+
    
   const [data,setData] = useState({
      email:"",
@@ -12,29 +18,25 @@ const Login = () => {
     errEmail:"",
     errPassWord:""
   })
-  const onSubmitLogic =(event)=>{
-    event.preventDefault()
-    console.log("your email:", data?.email);
-    console.log("your passWord:", data?.passWord);
+  const onSubmitLogic = async(event)=>{
+    
+      event.preventDefault()
 
-     var userError ={
-       errEmail:"",
-       errPassWord:""
-     }
-   
-   if(!data?.email){
-    userError={...userError,errEmail:"you must fill this input"}
-   }else{
-    userError={...userError,errEmail:""}
-   }
-        
-   if(!data?.passWord){
-    userError={...userError,errPassWord:"you must fill this input"}
-   }else{
-    userError={...userError,errPassWord:""}
-   }
-   setErrData(userError)
-  };
+      const clientData ={
+        email:emailRef?.current?.value,
+        password:passWordRef?.current?.value 
+      }
+      const res = await axios.post("http://localhost:5000/login",clientData)
+      console.log(res);
+      try{
+        if(res.status ===200){
+          localStorage.setItem("token",res.data.token)
+          navigate("/Plan")
+        }
+      }catch(error){
+        res.status(error).json({message:"something went wrong"})
+      }
+  }
   
   
   const getEmailLogic =(event)=>{
@@ -69,12 +71,12 @@ const Login = () => {
 
            <div id='email' className='item1'>
             <p>Email</p>
-            <input onChange={(event)=>getEmailLogic(event) } type="email" placeholder='enter your email' />
+            <input ref={emailRef}   onChange={(event)=>getEmailLogic(event) } type="email" placeholder='enter your email' />
             {errData?.errEmail? <h4 className="err">{errData?.errEmail} </h4> :null }
           </div>
            <div  className='item2'>
             <p>Password</p>
-            <input onChange={ (event)=>getPassWordLogic(event)} type="password" placeholder='enter your password' />
+            <input ref={passWordRef} onChange={ (event)=>getPassWordLogic(event)} type="password" placeholder='enter your password' />
             {errData?.errPassWord? <h4 className="err"> {errData?.errPassWord}  </h4> :null  }
            </div>
            <div className='item3'>

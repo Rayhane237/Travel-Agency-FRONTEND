@@ -15,7 +15,7 @@ const HomePage = () => {
 
   return (
     <div className='homepage'>
-      <img src="/public/perfect-vacation.jpg" alt="" className='bg-img' />
+      <img src="/perfect-vacation.jpg" alt="" className='bg-img' />
       <div className='overlay'>
            <div className='navbar-container'>
                <div>

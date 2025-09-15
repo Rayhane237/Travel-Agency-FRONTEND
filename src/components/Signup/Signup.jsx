@@ -1,9 +1,19 @@
 import { useState } from "react";
 import "./SignUp.css"
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 
-const SignUp =()=>{  
+const SignUp =()=>{ 
+  const navigate = useNavigate()
+  const nameRef = useRef(null)
+  const numberRef = useRef(null)
+  const passWordRef = useRef(null)
+  const emailRef = useRef(null)
+  
+ 
    const [data,setData] =useState({
       name: "",
       number: "",
@@ -18,8 +28,25 @@ const SignUp =()=>{
    })
   
 
-  const onClickLogic = (event) => {
+  const onClickLogic = async(event) => {
     event.preventDefault();
+
+    const clientData ={
+        email:emailRef?.current?.value,
+        password:passWordRef?.current?.value 
+      }
+      const res = await axios.post("http://localhost:5000/register",clientData)
+      console.log(res);
+      try{
+        if(res.status ===200){
+          localStorage.setItem("token",res.data.token)
+          navigate("/Login")
+        }
+      }catch(error){
+        res.status(error).json({message:"something went wrong"})
+      }
+    
+
     console.log("your name:", data?.name);
     console.log("your number:", data?.number);
     console.log("your email:", data?.email);
@@ -106,25 +133,25 @@ const SignUp =()=>{
        
           <div  id="item2">
             <h6 className="item-text">Name:</h6>
-            <input onChange={getNameLogic} type="text" placeholder="enter your name" />
+            <input ref={nameRef} onChange={getNameLogic} type="text" placeholder="enter your name" />
             {errData?.errName ? <h5 className="err" style={{color:"red"}}>{errData.errName}</h5> : null}
           </div>
 
           <div  id="item3">
             <h6 className="item-text"> Number:</h6>
-            <input onChange={(event) => getNumberLogic(event)} type="tel" placeholder="enter your phone number" />
+            <input ref={numberRef} onChange={(event) => getNumberLogic(event)} type="tel" placeholder="enter your phone number" />
             {errData?.errNumber ? <h5 className="err" style={{color:"red"}}>{errData?.errNumber}</h5> : null}
           </div>
 
           <div  className="item4">
             <h6 className="item-text">Email:</h6>
-            <input onChange={(event) => getEmailLogic(event)} type="email" placeholder="enter your email" />
+            <input ref={emailRef} onChange={(event) => getEmailLogic(event)} type="email" placeholder="enter your email" />
             {errData?.errEmail ? <h5 className="err" style={{color:"red"}}>{errData.errEmail}</h5> : null}
           </div>
 
           <div   id="item5">
             <h6 className="item-text">Password:</h6>
-            <input onChange={(event) => getPasswordLogic(event)} type="password" placeholder="enter your password" />
+            <input ref={passWordRef} onChange={(event) => getPasswordLogic(event)} type="password" placeholder="enter your password" />
             {errData?.errPassWord ? <h5 className="err" style={{color:"red"}}>{errData.errPassWord}</h5> : null}
           </div>
            
