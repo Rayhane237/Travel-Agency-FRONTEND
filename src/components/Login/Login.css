@@ -35,22 +35,24 @@ h1, h3,p, button ,h5 ,h6{
 }
 
 .login-container {
-    position: absolute;
-    top: 15%;
+    position: relative;
     background-color:rgba(255, 255, 255, 0.817) ;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column ;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-   max-height: 100vh;
-   max-width: 90vh;
-   height: 90vh;
+    padding: 2rem;
+    max-height: 90vh;
+    max-width: 50vh;
+    height: 70vh;
     width: 90%;
     gap: 1rem;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;/*ensure it is above overlay*/
    
 }
+
 .login-btn{
 
     width: 156px;
@@ -79,18 +81,26 @@ header {
     position: absolute;
     top: 10%;
 }
-.item1 {
-    position: absolute;
-    top: 18%;
+ .item1 {
+    position: relative;
+    top: 1%;
 }
 
 .item2 {
-    position: absolute;
-    top: 38%;
+    position: relative;
+    top: 3%;
 }
 
 .item3 {
-    position: absolute;
-    top: 77%;
+    position: relative;
+    top: 7%;
 }
-
+@media (max-width:500px){
+    .login-container{
+        padding: 1rem;
+        max-width: 100%;
+    }
+    input,.login-btn {
+        font-size: 0.9rem;
+    }
+}

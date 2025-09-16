@@ -5,7 +5,7 @@ import App from './App.jsx'
 import HomePage from './components/HOME/HomePage.jsx'
 import Signup from './components/Signup/Signup.jsx'
 import Login from './components/Login/Login.jsx'
-
+import Plan from './components/Plan/Plan.jsx'
 
 
 import {  
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
    {
     path: "/Login",
     element: <Login />,
+  },
+  {
+    path: "/Plan",
+    element: <Plan />,
   },
 
 
