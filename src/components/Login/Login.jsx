@@ -55,7 +55,7 @@ const Login = () => {
 
   return (
     <div className='homepage'>
-      <img src="/perfect-vacation.jpg"  className='bg-img' />    
+      <img src="/home.jpg"  className='bg-img' />    
       <div className='overlay'>     
         <form onSubmit={onSubmitLogic}   className="login-container">
           <header className='group'>

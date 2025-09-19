@@ -14,10 +14,10 @@ const HomePage = () => {
     }
 
   return (
-    <div className='homepage'>
-      <img src="/perfect-vacation.jpg" alt="" className='bg-img' />
-      <div className='overlay'>
-           <div className='navbar-container'>
+    <div className='home'>
+      <img src="/home.jpg" alt="" className='img' />
+      <div className='overlay-home'>
+           <div className='n-container'>
                <div>
                 
                </div>

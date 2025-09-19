@@ -111,9 +111,9 @@ const SignUp =()=>{
 
   return (
     <div className="homepage">
-      <img src="/perfect-vacation.jpg" alt="Vacation" className="bg-img" />
-      <div className="overlay">
-          <form className="form-container">
+      <img src="/perfect-vacation.jpg" alt="Vacation" className="background" />
+      <div className="over">
+          <form className="form-container-signup">
           <header id="item1" >
             <h1>Sign up</h1>
             <h4 style={{color:"rgba(160, 84, 37, 1) "}} >Create your account to unlock personalized travel experiences, exclusive offers, and seamless booking.</h4>

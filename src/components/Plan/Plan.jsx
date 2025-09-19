@@ -2,9 +2,15 @@
 import React, { useEffect } from 'react';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
-import "./Plan.css"
-import PlanPicsText from './PlanPicsText';
-import "./PlanPicsText.css"
+import "./Plan.css";
+import "./PlanCompos/PlanPicsText";
+import HomePlan from './PlanCompos/HomePlan';
+import PlanPicsText from './PlanCompos/PlanPicsText';
+import Destinations from './PlanCompos/Destinations';
+import ShowPlan from './PlanCompos/ShowPlan';
+import Footer from './PlanCompos/Footer';
+import Comments from './PlanCompos/Comments';
+
 
 function Plan() {
   const navigate = useNavigate();
@@ -30,43 +36,38 @@ function Plan() {
     fetchTestServer();
   }, []);
 
+
   return (
-   <div>    
-    <div className='homepage'>
-      <img src="/perfect-vacation.jpg" className='bg-img' />
-      <div className='overlay'>
-        <form className='navbar-container'>
-
-          <div className='navbar-item'>
-            <button>Home</button>
-          </div>
-          <div className='navbar-item'>
-            <button>Flights</button>
-          </div>
-          <div className='navbar-item'>
-            <button>Hotels</button>
-          </div>
-          <div className='navbar-item'>
-            <button>Discover</button>
-          </div>
-          <div className='navbar-item'>
-            <button>About us</button>
-          </div>
-          <div className='navbar-item'>
-            <button>Contact</button>
-          </div>
-        </form>
-        <div className='text'>
-          <h1>Don’t call it a dream. Call it a plan</h1>
-          <h5 id='travel-h'>Travel the way you wish to go with Phnes Travels helping you discover, live and travel at your own pace.</h5>
+   <div>
+        <div className='1compo'>
+            <HomePlan />
         </div>
+
+        <div className='2compo'> 
+           <PlanPicsText />
+        </div>
+
+        <div className='3compo'>
+           <Destinations />
+        </div>
+
+        <div className='4compo'>
+            <ShowPlan />
+        </div>
+         
         
-      </div>
-    </div>     
-    
+        <div className='5compo'>
+           <Comments />
+         </div>
 
 
-    </div>
+        <div className='6compo'>
+            <Footer />
+        </div>
+   </div>   
+   
+  
+     
   );
 }
 
