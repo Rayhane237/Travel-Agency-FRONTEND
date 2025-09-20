@@ -27,10 +27,7 @@ const TopDestinations = () => {
           const scrollRight =()=> {
               scrollRef.current.scrollBy({left:300,behavior:"smooth"})
           }
-  
-      
-     
-    
+ 
     return(  
  
     <div className='scroll-wrapper'>

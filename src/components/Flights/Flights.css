@@ -1,0 +1,203 @@
+/*--Header :compo1-------*/
+ .btns-flight {
+    position: absolute;
+     width: 100%;
+    padding: 0;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    height: 10%;
+    background-color: rgba(254, 254, 254, 0.927);
+  
+ } 
+
+ .flight-text  {
+    position: relative;
+    top: 110px;
+    margin-left: 20%;
+    color: rgb(252, 252, 252);
+    max-width: 90%;
+    width: 50%;
+} 
+.btn {
+    color: aqua;
+}
+
+
+.flight-btn button {
+      border: none;
+    color: rgb(42, 122, 112);
+    background-color: rgba(36, 102, 117, 0.005);
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flight-btn button:hover {
+    border: none;
+    border-radius: 12px;
+   color: rgb(236, 245, 243);
+    background-color: rgba(40, 119, 113, 0.744);
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(252, 252, 252);
+    width: 90%;
+}
+
+/*----------2compo: Flight Destinations -------*/
+.top-text {
+    margin-top: 10px;
+}
+.-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-top: 2%;
+     margin-left: 3% ;
+    
+    gap: 35px;
+    
+ }
+ 
+.f-btn  {
+    position: relative;
+    margin-top: 12%;
+    border-radius: 5px;
+    border: none;
+    color: rgb(36, 102, 117); 
+    background-color:  rgb(249, 252, 252);;
+    width: 190px;
+    height: 50px;
+    margin-left: 13%;
+}
+
+.f-btn:hover {
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(36, 101, 99); 
+    color:  rgb(244, 248, 248);;
+  
+}   
+    
+ .text-f  {
+    display: grid;
+    position: relative;
+    grid-template-rows: 1fr 1fr ;
+    padding-left: 10%;
+    padding-top: 20%;
+}  
+
+
+
+/*--------KAYAKING:3COMPO ------------*/
+.k-top-text {
+    margin-top: 5%;
+    padding-left: 5%;
+}
+.k-body {
+    padding: 1%;
+    margin: 3%;
+    border-radius: 12px;
+    background-color: #3989842f;
+}
+.kayaking-container {
+    position: relative;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 98%;
+    height: 55vh;
+    
+
+}
+
+.kayaking-container h2,h5 {
+    color: #f0f8ff;
+    margin-top: 3%;
+    margin-left: 5%;
+    
+}
+
+.baja {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    
+}
+.baja-price {
+    color: #338f87;
+    background-color: #f0f8ff;
+    border-radius: 12px;
+    margin-left: 10%;
+    margin-top: 3%;
+    text-align: center;
+    height: 40px;
+}
+
+.baja-btn  {
+    position: relative;
+    margin-top: 12%;
+    border-radius: 5px;
+    border: none;
+    color: rgb(36, 102, 117); 
+    background-color:  rgb(249, 252, 252);;
+    width: 80%;
+    height: 50px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.baja-btn:hover {
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(40, 100, 98); 
+    color:  rgb(244, 248, 248);;
+  
+} 
+.k-pic {
+    border-radius: 12px;
+    border-color: #36978f;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 40%;
+
+    
+} 
+.kayaking-item {  
+    height: 400px;
+    width: 60%;
+    border-radius: 12px;
+    grid-template-columns: 2fr 2fr;
+    background-color: rgb(42, 147, 135);
+
+}
+.footer-container-book {
+    position: relative;
+    
+    display: flex;
+    grid-template-columns: 1fr 1fr ;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 80px;
+    max-width: 100%;
+    height: 60vh;
+    background-color: rgb(36, 101, 99); 
+} 
+.footer-item-book {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    margin-top: 7vh;
+    margin-left: 16%;
+} 
+
+

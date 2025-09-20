@@ -1,8 +1,25 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const HomePlan = () => {
 
+     const navigate = useNavigate()
+
+     const navigateHome =()=>{
+      navigate("/")
+     }
+
+      const navigateFlights =()=>{
+       navigate("/Flights")
+      }
+      const navigateHotels =()=>{
+       navigate("/Hotels")
+      }
+     
+
+
   return (
+   
     <div>
         <div className='homepage-plan'>
                <img src="/home.jpg" className='bgd-img' />
@@ -10,13 +27,13 @@ const HomePlan = () => {
                 <div className='overlay-plan'>
                    <div className='btns-container'>
                       <div className='btn'>
-                        <button>Home</button>
+                        <button  onClick={navigateHome}>Home</button>
                       </div>
                        <div className='btn'>
-                        <button>Flights</button>
+                        <button onClick={navigateFlights} >Flights</button>
                        </div>
                         <div className='btn'>
-                         <button>Hotels</button>
+                         <button  onClick={navigateHotels}>Hotels</button>
                         </div>
                         <div className='btn'>
                         <button>Discover</button>
@@ -27,6 +44,7 @@ const HomePlan = () => {
                         <div className='btn'>
                         <button>Contact</button>
                         </div>
+                        
                       
                    </div>
                    <div className='plan-text'>

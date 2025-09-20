@@ -29,7 +29,8 @@ const HomePage = () => {
                        <button onClick={navigateUser} className='login'>Sign up</button> 
                          <br />
                       <button  onClick={navigateUserLogin} className='sign-up'>Login</button>
-                    <p>   Travel the way you wish to go with Phnes Travels helping you discover, live and travel at your own pace. </p>
+                      <br />
+                    <h3 style={{color:"white"}}>   Travel the way you wish to go with Phnes Travels helping you discover, live and travel at your own pace. </h3>
                   </div>
                   
                </div>
