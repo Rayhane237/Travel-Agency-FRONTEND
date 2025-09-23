@@ -1,9 +1,13 @@
 import React from 'react'
-import Hotel from "../../../assets/Hotel.jpg"
+import '../AboutUs.css'
+import Hotel from "../../../assetsAbout/About5.jpg"
 import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
+
+
+const HeaderAbout = () => {
        
+             
         const background = {
                   backgroundImage: `url(${Hotel})`,
                    backgroundSize: 'cover', 
@@ -38,11 +42,9 @@ const Header = () => {
                  const navigateContact =()=>{
                  navigate("/Contact")
                   }
-                   
-
 
   return (
-    <div style={background}>
+       <div style={background}>
     
          <div className='black'>
                   <div className='flight-container' >
@@ -68,10 +70,9 @@ const Header = () => {
                       
                    </div>
                       <div className='flight-text'>
-                         <h1 >Create your travel wish list and leave the rest for us.</h1>
-                       
+                        <h1>About Us</h1>
                    </div> 
-   
+                     
              </div>
 
          </div>
@@ -82,4 +83,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HeaderAbout

@@ -1,0 +1,138 @@
+
+/*--------compo2:Top content--------*/
+
+.top-content-about{
+  background-color: rgba(245, 234, 159, 0);
+  display: flex;
+   gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  
+
+}
+
+.top-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    font-size: clamp(14px, 2vw, 10px);
+    line-height: 1.6;
+}
+.top-text h2{
+    margin-left: 3%;
+    color: black;
+
+}
+
+.roses {
+    width: clamp(200px, 20vw, 300px);
+    height: clamp(250px, 60vh, 550px);
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+#top-text2 {
+    margin-right: 3%;
+}
+
+/*--------compo3:mid content--------*/
+.mid-content {
+    position: relative;
+    margin-top: 50px;
+}
+.mid-text {
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+.icons-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: clamp(20px, 5vw, 50px);
+    gap: clamp(20px, 10vw, 50px);
+   
+    background-color: rgba(201, 129, 35, 0);
+}
+
+.icon-box {
+  
+    width: clamp(150px, 20vw, 200px);
+    height: clamp(150px, 20vw, 200px);
+    padding-left: 3%;
+    color: rgb(36, 113, 120);
+    text-size-adjust: clamp(14px, 2vw, 18px);
+}
+
+/*--------compo4:bottom team content--------*/
+
+.top-content-container {
+    position: relative;
+    margin-top: clamp(200px, 30vw, 100px);
+}
+
+
+
+.team-container {
+    position: relative;
+    margin-top: clamp(100px, 30vw, 100px);
+}
+
+.team-header {
+  margin-left: 5%;
+}
+
+
+.team-section {
+    margin-top: clamp(50px, 20vw, 50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(20px, 10vw, 10%);
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
+.team-img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+   
+}/*-------compo5:bottom icons-------*/
+bottom-text {
+    margin-top: 50px;
+}
+.icon-b {
+    position: relative;
+    width: clamp(150px, 20vw, 200px);
+    height: clamp(150px, 20vw, 200px);
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(208, 209, 212);
+}
+.icon-b h5 {
+    color: rgb(181, 182, 183);
+}
+
+.compo4 {
+    position: relative;
+    margin-top: clamp(10%, 30vh, 35%);
+}

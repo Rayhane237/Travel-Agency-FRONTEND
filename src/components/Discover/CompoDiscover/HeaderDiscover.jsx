@@ -1,26 +1,28 @@
 import React from 'react'
-import Flight from "../../../assets/perfect.jpg"
-import { useNavigate } from 'react-router-dom';
+import "../Discover.css";
+
+import { useNavigate } from 'react-router-dom'
+import Home from "../../../assetsDiscover/6.jpg"
 
 
-
-
-const HeaderFlights = () => {
-   
+const HeaderDiscover = () => {
           const background = {
-            backgroundImage: `url(${Flight})`,
-             backgroundSize: 'cover', 
-             backgroundPosition: 'right', 
-             backgroundRepeat: 'no-repeat', 
-             width:"100%",
+            backgroundImage: `url(${Home})`,
+            backgroundSize: 'cover', 
+            backgroundPosition: 'right', 
+            backgroundRepeat: 'no-repeat', 
+            width:"100vw",
              height:"370px",
-             margin:"0",
-             padding:"0",
-             borderRadius:"0px" ,
-             position:'relative',
-            }; 
+            margin:"0",
+            padding:"0",
+            borderRadius:"0px" ,
+            position:'relative',
+          };
+           
+        
+           
+        const navigate = useNavigate()
 
-  const navigate = useNavigate()
      const navigateHome =()=>{
       navigate("/")
      }
@@ -31,25 +33,23 @@ const HeaderFlights = () => {
       const navigateHotels =()=>{
        navigate("/Hotels")
       }
-     const navigateDiscover =()=>{
+      const navigateDiscover =()=>{
         navigate("/Discover")
-    } 
+      }
       const navigateAboutUs =()=>{
-           navigate("/About")
-       }
-        const navigateContact =()=>{
-             navigate("/Contact")
-        }
-                  
- 
- 
+        navigate("/About")
+      }
+      const navigateContact =()=>{
+        navigate("/Contact")
+      }
 
 
   return (
-    <div style={background}>
-      <div className='black'>
-         
-         <div className='flight-container' >
+       <div style={background}>
+    
+         <div className='black-d'>
+
+                  <div className='flight-container' >
                  <div className='btns-flight'>
                       <div className='flight-btn'>
                         <button  onClick={navigateHome}>Home</button>
@@ -71,16 +71,20 @@ const HeaderFlights = () => {
                         </div>
                       
                    </div>
-                   <div className='flight-text'>
-                         <h1>Create your own travel wish list and leave the rest for us.</h1>
-                         <h5 style={{color:"white"}}>Special offers to suit your plan.</h5>
+                      <div className='flight-text'>
+                         <h1 >Discover</h1>
+                       
                    </div> 
    
              </div>
 
-       </div>  
+         </div>
+          
+            
+
     </div>
   )
+   
 }
 
-export default HeaderFlights
+export default HeaderDiscover

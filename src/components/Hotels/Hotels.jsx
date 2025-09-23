@@ -4,7 +4,7 @@ import Header from "./SeeHotels/Header"
 import Research from "./SeeHotels/Research"
 import Destinations from './SeeHotels/Destinations'
 import Kayaking from './SeeHotels/Kayaking'
-import Footer from "./SeeHotels/Footer"
+import Footer from "./SeeHotels/FooterHotel"
 
 const Hotels = () => {
   return (

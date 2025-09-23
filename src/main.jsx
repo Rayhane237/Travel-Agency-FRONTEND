@@ -9,11 +9,18 @@ import Flights from './components/Flights/Flights.jsx'
 import BookFlight from "./components/Flights/BookFlight/BookFlights.jsx"
 import Hotels from './components/Hotels/Hotels.jsx'
 import BookHotel from './components/Hotels/BookHotel.jsx'
+import Discover from "./components/Discover/Discover.jsx"
+import AboutUs from './components/AboutUs/AboutUs.jsx'
+import Contact from './components/Contact/Contact.jsx'
+
+
+
 
 import {  
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 const router = createBrowserRouter([
    
    {
@@ -34,7 +41,7 @@ const router = createBrowserRouter([
   },
    {
       path: "/Flights",
-       element:<Flights />
+       element:<Flights />,
    },
     {  
         path:"/BookFlight" ,
@@ -48,10 +55,24 @@ const router = createBrowserRouter([
       },
 
      { 
-        path:"BookHotel",
-       element:<BookHotel /> 
+        path:"/BookHotel",
+       element:<BookHotel />, 
       },
-
+      {
+        path:"/Discover",
+        element:<Discover />,
+      },
+        {
+        path:"/About",
+        element:<AboutUs/>,
+      },
+       {
+        path:"/Contact",
+        element:<Contact />,
+      },
+       
+       
+      
           
   
 

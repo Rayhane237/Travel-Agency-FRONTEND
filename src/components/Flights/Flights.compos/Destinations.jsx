@@ -83,19 +83,6 @@ const Destinations = () => {
          borderRadius:"10px" ,
        };
          
-          const imgMoscow = {
-         backgroundImage: 
-          `url(${Moscow})  `,
-         backgroundSize: 'cover', 
-         backgroundPosition: 'right', 
-         backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
-         width: "250px",
-         borderRadius:"10px" ,
-       };
-         
-       
-         
               const imgTaj = {
          backgroundImage: 
           `url(${Taj})  `,
@@ -108,18 +95,7 @@ const Destinations = () => {
        };
          
         
-              const imgLights = {
-         backgroundImage: 
-          `url(${Lights})  `,
-         backgroundSize: 'cover', 
-         backgroundPosition: 'right', 
-         backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
-         width: "250px",
-         borderRadius:"10px" ,
-       };
-         
-         
+    
   return (
         <div>
                 <br />
@@ -185,17 +161,7 @@ const Destinations = () => {
                       <button onClick={navBookFlight} className='f-btn'> Book Flights</button>
                </div>
             </div>
-              <div className='flight-item' >
-                <div style={imgMoscow}  >
-                    <div className='text-f'>  
-                       <h1 >Moscow</h1>     
-                        <h3>Do not miss this experience</h3>
-                        <h1 className='price'>$500</h1>
-                    </div>
-                  
-                      <button onClick={navBookFlight} className='f-btn'> Book Flights</button>
-               </div>
-            </div>
+           
               <div className='flight-item' >
                 <div style={imgBrazil}  >
                     <div className='text-f'>  
@@ -207,17 +173,7 @@ const Destinations = () => {
                       <button onClick={navBookFlight} className='f-btn'> Book Flights</button>
                </div>
             </div>
-              <div className='flight-item' >
-                <div style={imgLights}  >
-                    <div className='text-f'>  
-                       <h1 >Canada</h1>     
-                        <h3> the incredible Northern Lights</h3>
-                        <h1 className='price'>$860</h1>
-                    </div>
-                  
-                      <button onClick={navBookFlight} className='f-btn'> Book Flights</button>
-               </div>
-            </div>
+        
                 <div className='flight-item' >
                 <div style={imgTour}  >
                     <div className='text-f'>  

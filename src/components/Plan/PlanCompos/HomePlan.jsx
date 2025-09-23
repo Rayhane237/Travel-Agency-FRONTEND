@@ -15,6 +15,15 @@ const HomePlan = () => {
       const navigateHotels =()=>{
        navigate("/Hotels")
       }
+      const navigateDiscover =()=>{
+        navigate("/Discover")
+      }
+      const navigateAboutUs =()=>{
+        navigate("/About")
+      }
+      const navigateContact =()=>{
+        navigate("/Contact")
+      }
      
 
 
@@ -36,13 +45,14 @@ const HomePlan = () => {
                          <button  onClick={navigateHotels}>Hotels</button>
                         </div>
                         <div className='btn'>
-                        <button>Discover</button>
+                        <button onClick={navigateDiscover} >Discover</button>
+                      
                         </div>
                         <div className='btn'>
-                        <button>About us</button>
+                        <button onClick={navigateAboutUs}>About us</button>
                         </div>
                         <div className='btn'>
-                        <button>Contact</button>
+                        <button onClick={navigateContact}>Contact</button>
                         </div>
                         
                       
