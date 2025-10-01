@@ -80,8 +80,8 @@ const Login = () => {
       <div className='over'>     
         <form onSubmit={onSubmitLogic}   className="form-container-signup">
           <header className='item1'>
-            <h1 style={{color:"black"}}>Login</h1>
-            <h4 >Login to access your Phnes.Travels account</h4>
+            <h1 className='login' style={{color:"black"}}>Login</h1>
+            <h4  className='login2'>Login to access your Phnes.Travels account</h4>
           </header>
             
                

@@ -1,109 +1,209 @@
-
-
-
-
 *{
     padding: 0;
     margin: 0;
 }
-.bg-img {
+
+.background {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
+  
+  min-height: 200vh;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 }
 
-.overlay {
+
+.over {
   position: relative;
+  display: flex;
   z-index: 2;
   color: white;
-  text-align: center;
-  padding-top: 20%;
-}
-h4 {
-    color: red;
-    font-size: small;
-    font-family: 'Montserrat', sans-serif;
-}
-body {
-  font-family: 'Lora', serif;
-}
-a {
-    font-size: 1rem;
-    color: rgb(174, 83, 50);
-}
-h1, h3,p, button ,h5 ,h6{
-    color: rgb(102, 60, 6);
-  font-family: 'Montserrat', sans-serif;
-}
-
-.login-container {
-    position: relative;
-    background-color:rgba(255, 255, 255, 0.817) ;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    padding: 2rem;
-    max-height: 90vh;
-    max-width: 50vh;
-    height: 70vh;
-    width: 90%;
-    gap: 1rem;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 3;/*ensure it is above overlay*/
-   
-}
- 
-.login-btn{
-    position: relative;
-    margin-top: 1rem;
-    margin-right: 0rem;
-    width: 300px;
-    height: 37px;
-    background-color: antiquewhite;
-    border: none;
-    border-radius: 6px;
-}
-.login-btn:hover{
-    color: antiquewhite;
-    background-color: rgb(75, 48, 12);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
   
 }
 
-input {
-    height: 30px;
-    width: 157px;
-    border-radius: 9px;
-    border: 1px solid rgb(69, 135, 130);
+a {
+    color: rgb(215, 61, 61);
+    font-size: small;
 }
-header {
-    position: absolute;
-    top: 10%;
-}
- .item1 {
+.login {
     position: relative;
-    top: 1%;
+    margin-right: 3rem;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 2rem;
+    
 }
 
+.login2 {
+    margin-left: 5rem;
+}
+
+ header label,h5,h4  {
+    
+    color: rgb(31, 107, 118);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#item1 {
+  position: relative;
+
+}
+header h1 {
+  position: relative;
+  margin-left: 13rem;
+}
+header h4 {
+  margin-left: 30px;
+   width: clamp(20% 30% 50%);
+   color: rgb(31, 107, 118);
+}
+
+.form-container-signup {
+  background-color: rgba(250, 250, 250, 0.977);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+
+
 .item2 {
-    position: relative;
-    top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 300px;
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+}
+
+.item2 h5 {
+  margin-bottom: 0rem;
+  color: black;
+}
+
+.item2 input {
+  width: 100%;
+  height: 35px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(69, 135, 130);
+  font-size: 1rem;
+}
+
+.error {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: red;
 }
 
 .item3 {
-    position: relative;
-    top: 7%;
+  background-color: rgb(248, 248, 248);
+  margin-top: 1.5rem;
+  text-align: center;
 }
-@media (max-width:500px){
-    .login-container{
-        padding: 1rem;
-        max-width: 100%;
+
+.item3 h5 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.item-text h5{
+  color: rgb(11, 6, 6);
+}
+
+
+.login-btn {
+  width: 100%;
+  height: 40px;
+  max-width: 300px;       
+  min-width: 180px;  
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: rgb(100, 66, 28);
+  color: antiquewhite;
+}
+
+@media (max-width: 800px) {
+  .form-container-login {
+    width: 70%;
+    padding: 1rem;
+  }
+
+  .login-btn {
+    width: 60%;
+  }
+
+  .item2 input {
+    height: 33px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    padding-right: 15rem;
+  }
+
+  header h4 {
+    display:none ;
+  }
+
+  
+}
+
+@media (max-width:400px){
+  .item2 {
+   position: relative;
+   margin-top: 33px;
+  }
+  header h4 {
+    display: none;
+  }
+     
+    header h1 {
+      margin-right: 32rem;
+      font-size: 36px;
     }
-    input,.login-btn {
-        font-size: 0.9rem;
+
+    .login-btn {
+      width: 70%;
     }
+ 
+
+}
+
+@media (max-width:360px){
+
+  .item3 {
+    position: relative;
+    margin-left: 0rem;
+  }
+   .login-btn {
+     width: 10vw;
+     
+    }
+     
+    header h1 {
+      margin-right: 1rem;
+      font-size: 1.4rem;
+    }
+ 
 } 

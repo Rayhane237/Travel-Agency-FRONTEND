@@ -16,6 +16,7 @@
 
 
 .over {
+  position: relative;
   display: flex;
   z-index: 2;
   color: white;
@@ -59,8 +60,8 @@ header h4 {
   align-items: center;
   padding: 1rem;
   border-radius: 8px;
-  width: 70%;
-  max-width: 600px;
+  width: 80%;
+  max-width: 700px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 3;
 }
@@ -115,8 +116,10 @@ header h4 {
 
 
 .sign-btn {
-  width: 300px;
+  width: 100%;
   height: 40px;
+    max-width: 300px;       
+  min-width: 180px;  
   background-color: antiquewhite;
   border: none;
   border-radius: 6px;
@@ -132,8 +135,12 @@ header h4 {
 
 @media (max-width: 800px) {
   .form-container-signup {
-    width: 60%;
+    width: 70%;
     padding: 1rem;
+  }
+
+  .sign-btn {
+    width: 60%;
   }
 
   .item2 input {
@@ -149,10 +156,7 @@ header h4 {
     display:none ;
   }
 
-  .sign-btn {
-    width: 300px;
-    height: 35px;
-  }
+  
 }
 
 @media (max-width:400px){
@@ -167,6 +171,10 @@ header h4 {
     header h1 {
       margin-right: 32rem;
       font-size: 36px;
+    }
+
+    .sign-btn {
+      width: 50%;
     }
  
 
@@ -192,13 +200,13 @@ header h4 {
     margin-left: 2rem;
   }
    .sign-btn {
-     width: 160px;
+     width: 130px;
      
     }
      
     header h1 {
-      margin-right: 30rem;
-      font-size: 30px;
+      margin-right: 1rem;
+      font-size: 1.4rem;
     }
  
 }
