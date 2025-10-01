@@ -1,3 +1,139 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.top-text  h1 {
+    margin-top: clamp(2rem,5rem,10rem);
+    margin-left: -10rem;
+}
+ 
+.top-text h3 {
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+
+.navbar-toggle-btn, .navbar-close-btn {
+    display: none;
+}
+
+.navbar-container {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 5vh;
+    display: flex;
+    gap: 5%;
+    z-index: 100;
+}
+
+.navbar-container h2 {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 17px;
+    color: rgb(21, 75, 82);
+}
+
+.navbar-btn {
+    position: relative;
+    margin-top: 0.1rem;
+    border-radius: 14px;
+    color: rgba(34, 122, 118, 0.993);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1.1rem;
+    width: 10%;
+    height: 30px;
+}
+.navbar-btn:hover {
+    color: white;
+    background-color:rgba(38, 139, 134, 0.79) ;
+}
+
+
+@media (max-width: 805px) {
+  .navbar-toggle-btn  {
+    display: block;
+  
+  }
+
+  
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: -850px;
+  width: 290px;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.354);
+  transition: left 0.3s ease;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.navbar-container.open {
+  display: flex;
+  gap: 4.5rem;
+  flex-direction: column;
+  left: 0;
+  
+}
+
+.navbar-toggle-btn {
+ background-color: rgba(12, 12, 12, 0);
+ border-color: black;
+ border-radius:10px ;
+  position: fixed;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 3rem;
+  
+  border: none;
+  color: rgb(251, 247, 247);
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.navbar-close-btn {
+  display: block;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: rgb(255, 247, 247);
+  margin-left: 80%;
+  cursor: pointer;
+}
+
+.navbar-btn {
+    width: 250px;
+    height: 50px;
+    border-radius: 27px;
+    border:1px solid rgb(24, 98, 73);
+    background-color: rgb(239, 250, 246);
+}
+ 
+.navbar-btn:hover {
+  color: white;
+  background-color: rgb(50, 148, 133);
+} 
+    
+
+    .navbar-container:not(.open) .nav-btn {
+    display: none;
+  }
+
+  .navbar-container:not(.open) .nav-close-btn {
+    display: none;
+  }
+
+}
+
+
+html h3 {
+    font-family: 'Montserrat', sans-serif;;
+}
+
 
 
 .text-home {
@@ -16,7 +152,7 @@
     color: rgb(255, 255, 255);
     background-color: rgba(36, 102, 117, 0);
     width: 100px;
-    height: 30px;
+    height: 20px;
     border-radius: 12px;
     
     font-family: Arial, Helvetica, sans-serif;
@@ -632,3 +768,4 @@ html , body {
         height: 60rem;
     }
 }
+

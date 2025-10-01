@@ -101,6 +101,7 @@ const Destinations = () => {
 
            <div className='top-text'>
             <h3 style={{color:"rgba(21, 63, 72, 1)"}}>Top destinations</h3>
+            <br />
             <h1 style={{color:"black"}}>Discover your love</h1>
            </div>
           

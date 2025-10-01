@@ -53,26 +53,26 @@ const HeaderAbout = () => {
             <header style={background}>
                      <div className='black'> 
                              {!sidebarOpen && (
-                               <button className='toggle-btn'  onClick={toggleSidebar}>
-                                     <IoIosMenu />
-                                 </button>
-                  
-                             )}
-                   
-                            <div className={`nav-container ${sidebarOpen ? 'open' : ''}`}>
-                             {sidebarOpen && (
-                              <button className='nav-close-btn' onClick={toggleSidebar}>
-                                     <RiCloseLargeFill />
-                                 </button>
-                              )}
-                                <h2>PhnesTravel</h2>
-                               <button className='nav-btn' onClick={navigateHome}>Home</button>
-                               <button className='nav-btn' onClick={navigateFlights}>Flights</button>
-                               <button className='nav-btn' onClick={navigateHotels}>Hotels</button>
-                               <button className='nav-btn' onClick={navigateDiscover}>Discover</button>
-                               <button className='nav-btn' onClick={navigateAboutUs}>About us</button>
-                             
-                            </div>
+                  <button className='navbar-toggle-btn' onClick={toggleSidebar}>
+                                              <IoIosMenu style={{color:"black"}} />
+                                          </button>
+                           
+                                      )}
+                            
+                                     <div className={`navbar-container ${sidebarOpen ? 'open' : ''}`}>
+                                      {sidebarOpen && (
+                                       <button className='navbar-close-btn' onClick={toggleSidebar}>
+                                              <RiCloseLargeFill />
+                                          </button>
+                                       )}
+                                         <h2>PhnesTravel</h2>
+                                        <button className='navbar-btn' onClick={navigateHome}>Home</button>
+                                        <button className='navbar-btn' onClick={navigateFlights}>Flights</button>
+                                        <button className='navbar-btn' onClick={navigateHotels}>Hotels</button>
+                                        <button className='navbar-btn' onClick={navigateDiscover}>Discover</button>
+                                        <button className='navbar-btn' onClick={navigateAboutUs}>About us</button>
+                                     </div>
+                                       
                               
                               <div className='text-home'>
                                      <h2>About us</h2>

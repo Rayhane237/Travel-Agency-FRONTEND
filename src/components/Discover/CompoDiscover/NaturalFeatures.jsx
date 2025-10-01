@@ -18,7 +18,7 @@ const NaturalFeatures = () => {
        backgroundPosition: 'right', 
        backgroundRepeat: 'no-repeat', 
         width: 'clamp(220px, 26vw, 400px)',
-       height: 'clamp(170px, 24vw, 300px)',
+       height: 'clamp(170px, 24vw, 100px)',
        marginLeft:"1rem",
        padding:"0.5",
        borderRadius:"13px" ,
@@ -30,7 +30,7 @@ const NaturalFeatures = () => {
                  backgroundPosition: 'right', 
                  backgroundRepeat: 'no-repeat', 
                      width: 'clamp(220px, 26vw, 400px)',
-                   height: 'clamp(170px, 24vw, 300px)',
+                   height: 'clamp(170px, 24vw, 100px)',
                   marginLeft:"1rem",
                   padding:"0.5",
                   borderRadius:"13px" ,
@@ -43,7 +43,7 @@ const NaturalFeatures = () => {
                       backgroundPosition: 'right', 
                       backgroundRepeat: 'no-repeat', 
                        width: 'clamp(220px, 26vw, 400px)',
-                       height: 'clamp(170px, 24vw, 300px)',
+                       height: 'clamp(170px, 24vw, 100px)',
                       marginLeft:"1rem",
                       padding:"0.5",
                      borderRadius:"13px" ,
@@ -132,7 +132,7 @@ An inventory of South Island glaciers during the 1980s indicated there were abou
            
            
              
-          <div className='flex3' id='body2'>
+          <div className='grid3' id='body2'>
                
                    <div style={backNew} className='back' >
                         <h2>Glacier National Park</h2>

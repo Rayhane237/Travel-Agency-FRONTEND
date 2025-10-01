@@ -11,8 +11,6 @@ import Hotels from './components/Hotels/Hotels.jsx'
 import BookHotel from './components/Hotels/BookHotel.jsx'
 import Discover from "./components/Discover/Discover.jsx"
 import AboutUs from './components/AboutUs/AboutUs.jsx'
-import Contact from './components/Contact/Contact.jsx'
-
 
 
 
@@ -66,11 +64,11 @@ const router = createBrowserRouter([
         path:"/About",
         element:<AboutUs/>,
       },
-       {
-        path:"/Contact",
-        element:<Contact />,
-      },
-       
+      //    {
+      //   path:"/Contact",
+      //   element:<Contact/>,
+      // },
+     
        
       
           

@@ -44,37 +44,32 @@ const HomePlan = () => {
              const navigateAboutUs =()=>{
                   navigate("/About")
               }
-               // const navigateContact =()=>{
-               //      navigate("/Contact")
-               // }
-                         
-        
-        
-       
+          
+    
   return (
            <header style={background}>
-                <div className='black'> 
-                        {!sidebarOpen && (
-                          <button className='toggle-btn'  onClick={toggleSidebar}>
-                                <IoIosMenu style={{color:"grey"}}/>
-                            </button>
-             
-                        )}
-              
-                       <div className={`nav-container ${sidebarOpen ? 'open' : ''}`}>
-                        {sidebarOpen && (
-                         <button className='nav-close-btn' onClick={toggleSidebar}>
-                                <RiCloseLargeFill />
-                            </button>
-                         )}
-                           <h2>PhnesTravel</h2>
-                          <button className='nav-btn' onClick={navigateHome}>Home</button>
-                          <button className='nav-btn' onClick={navigateFlights}>Flights</button>
-                          <button className='nav-btn' onClick={navigateHotels}>Hotels</button>
-                          <button className='nav-btn' onClick={navigateDiscover}>Discover</button>
-                          <button className='nav-btn' onClick={navigateAboutUs}>About us</button>
-                       </div>
-                         
+                              <div className='black'> 
+                                      {!sidebarOpen && (
+                                        <button className='navbar-toggle-btn' onClick={toggleSidebar}>
+                                              <IoIosMenu style={{color:"black"}} />
+                                          </button>
+                           
+                                      )}
+                            
+                                     <div className={`navbar-container ${sidebarOpen ? 'open' : ''}`}>
+                                      {sidebarOpen && (
+                                       <button className='navbar-close-btn' onClick={toggleSidebar}>
+                                              <RiCloseLargeFill />
+                                          </button>
+                                       )}
+                                         <h2>PhnesTravel</h2>
+                                        <button className='navbar-btn' onClick={navigateHome}>Home</button>
+                                        <button className='navbar-btn' onClick={navigateFlights}>Flights</button>
+                                        <button className='navbar-btn' onClick={navigateHotels}>Hotels</button>
+                                        <button className='navbar-btn' onClick={navigateDiscover}>Discover</button>
+                                        <button className='navbar-btn' onClick={navigateAboutUs}>About us</button>
+                                     </div>
+                              
                          <div className='text-home'>
                                 <h2>Phnes Travel — Where luxury meets technology. Book elite journeys with effortless precision.</h2>
                          </div>

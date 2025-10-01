@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderBook from './HeaderBook'
 import Footer from "./Footer"
-
+ //import Payloads from "./Payloads"
 
 const BookFlights = () => {
   return ( 
@@ -11,6 +11,8 @@ const BookFlights = () => {
        <div className='1compo'>
            <HeaderBook />
        </div>
+        
+
         <div className='compo-footer'>
             <Footer />
         </div>

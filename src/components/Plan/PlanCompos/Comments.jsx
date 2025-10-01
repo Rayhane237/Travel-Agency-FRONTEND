@@ -37,7 +37,7 @@ const Comments = () => {
             <div style={background}  >
 
                  <div className='top-comments'>
-                   <h4 style={{color:"white"}}>Testimonials  </h4>
+            
                    <h1  style={{color:"white"}}>What they say about us</h1> 
                    
                  </div>

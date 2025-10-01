@@ -1,50 +1,40 @@
 /*--Header :compo1-------*/
- * {
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-.top-text  h1 {
-    margin-top: clamp(2rem,5rem,10rem);
-    margin-left: -10rem;
-}
- 
-.top-text h3 {
-    margin-top: 3rem;
-    margin-right: 1rem;
-}
-
-.toggle-btn, .nav-close-btn {
+.navbar-toggle-btn, .navbar-close-btn {
     display: none;
 }
 
-.nav-container {
+.navbar-container {
     background-color: rgb(255, 255, 255);
     height: 5vh;
     display: flex;
     gap: 5%;
 }
 
-.nav-container h2 {
+.navbar-container h2 {
     margin-top: 0.5rem;
     margin-left: 1rem;
     font-size: 17px;
     color: rgb(21, 75, 82);
 }
 
-.nav-btn {
+.navbar-btn {
     position: relative;
     margin-top: 0.1rem;
     border-radius: 14px;
     color: rgba(34, 122, 118, 0.993);
     background-color: rgb(255, 255, 255);
     border: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     width: 10%;
     height: 30px;
 }
-.nav-btn:hover {
+.navbar-btn:hover {
     color: white;
     background-color:rgba(38, 139, 134, 0.79) ;
 }
@@ -53,11 +43,12 @@
 @media (max-width: 805px) {
   .toggle-btn  {
     display: block;
+    color: rgb(107, 105, 105);
   
   }
 
   
-.nav-container {
+.navbar-container {
   position: fixed;
   top: 0;
   left: -850px;
@@ -67,20 +58,23 @@
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.354);
   transition: left 0.3s ease;
-  padding: 1rem;
+  padding: 0.5rem;
   z-index: 1000;
 }
 
-.nav-container.open {
+.navbar-container.open {
   display: flex;
   gap: 4.5rem;
   flex-direction: column;
   left: 0;
   
 }
-
-.toggle-btn {
- background-color: rgba(12, 12, 12, 0);
+ 
+.navbar-container h2 {
+   display: none;
+}
+.navbar-toggle-btn {
+ background-color: rgba(250, 254, 254, 0.037);
  border-color: black;
  border-radius:10px ;
   position: fixed;
@@ -94,7 +88,7 @@
   z-index: 1100;
 }
 
-.nav-close-btn {
+.navbar-close-btn {
   display: block;
   font-size: 2rem;
   background: none;
@@ -104,25 +98,26 @@
   cursor: pointer;
 }
 
-.nav-btn {
+.navbar-btn {
+    margin-left: 4%;
     width: 250px;
-    height: 50px;
+    height: 45px;
     border-radius: 27px;
     border:1px solid rgb(24, 98, 73);
     background-color: rgb(239, 250, 246);
 }
  
-.nav-btn:hover {
+.navbar-btn:hover {
   color: white;
   background-color: rgb(50, 148, 133);
 } 
     
 
-    .nav-container:not(.open) .nav-btn {
+    .navbar-container:not(.open) .nav-btn {
     display: none;
   }
 
-  .nav-container:not(.open) .nav-close-btn {
+  .navbar-container:not(.open) .nav-close-btn {
     display: none;
   }
 
