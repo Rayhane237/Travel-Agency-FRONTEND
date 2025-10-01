@@ -1,16 +1,27 @@
 import React from 'react'
 import flights from "../../../assets/flights.jpg";
 import hotels from "../../../assets/hotels.jpg";
-
+import { useNavigate } from 'react-router-dom';
 
 const ShowPlan = () => {
+     
+       const navigate = useNavigate()
+
+  
+      const navigateFlights =()=>{
+       navigate("/Flights")
+      }
+      const navigateHotels =()=>{
+       navigate("/Hotels")
+      }
+
      const backgroundFlights = {
     backgroundImage: `url(${flights})`,
     backgroundSize: 'cover', 
     backgroundPosition: 'right', 
     backgroundRepeat: 'no-repeat', 
-    height: '40vh', 
-    width: "250px",
+    height: '37vh', 
+    width: "280px",
     borderRadius:"10px" ,
   };
     
@@ -19,36 +30,32 @@ const ShowPlan = () => {
     backgroundSize: 'cover', 
     backgroundPosition: 'left', 
     backgroundRepeat: 'no-repeat', 
-    height: '40vh', 
-    width: '250px',
+    height: '37vh', 
+    width: '280px',
     borderRadius: "10px", 
   };
 
 
 
   return (
-    <div className='show-plan-body' >
-
-        <div className='show-container'>
-            <div className='show'>
-                <div style={backgroundFlights}  id='show1'>
-                     <h3>Flights</h3>
-                      <h6  >Search flights & places and book for your amazing trips.</h6>
-                      <button className='show-btn'> Show Flights</button>
-                </div>
-            </div>
-             <div style={backgroundHotels} >
-                
-                 <div className='show'>
-                     <h3 >Hotels</h3>
-                     <h6 >From luxury suites to cozy budget rooms, there's always a place to rest and recharge.</h6>
-                     <button className='show-btn'>Show Hotels</button>
-                 </div>
+    <div className='show-plan-container' > 
+           <div  style={backgroundFlights}  >     
+              <div className='show-plan' >
+                       <h2>Flights</h2>
+                      <h5 >Search flights & places and book for your amazing trips.</h5>
+                      <button onClick={navigateFlights} className='s-btn'> Show Flights</button>
+              </div>
             </div>
            
-           
-
-        </div>
+            <div style={backgroundHotels} >
+              <div className='show-plan'> 
+                       <h2>Hotels</h2>
+                      <h5  >Search Hotels & places and book for your amazing trips.</h5>
+                      <button onClick={navigateHotels} className='s-btn'> Show Hotels</button>
+              </div>
+            </div>
+              
+       
 
     </div>
   )

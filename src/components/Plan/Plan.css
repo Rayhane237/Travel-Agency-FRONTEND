@@ -1,50 +1,13 @@
-/* * {
-    padding: 0.5;
-    margin: 0.5;
-} */
-.homepage-plan {
-    
+
+
+.text-home {
     position: relative;
-    height: 60vh;
-    width: 100%;
-} 
-
-.bgd-img {
-  position: absolute;
-  margin-top: 0.5%;
-  margin-left: 0.5%;
-  width: 99%;
-  height: 60vh;
-  object-fit: cover;
-  z-index: 1;
-  border-radius: 13px;
-  background-color: rgba(240, 248, 255, 0.511);
+    margin-top: 6rem;
 }
 
-.overlay-plan {
-  position: absolute;
-  z-index: 2;
-  top: 0.5;left: 0;
-  width: 100%;
-  height: 60vh;
-  color: white;
-  text-align: center;
-  padding-top: 15%;
-}
-.btns-container {
-    position: absolute;
-    top: 0.5%;right: 0%;
-    padding: 0px;
-    display: flex;
-    flex-direction:row ;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-    width: 100%;
-    height: 10%;
-    
-    background-color: rgba(50, 116, 135, 0);
+.text-home h2  {
+    color: aliceblue;
+    margin-left: 5rem;
 
 }
 
@@ -66,9 +29,100 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-      color: rgb(252, 252, 252);
-    width: 90%;
+.black {
+    position: relative;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+.homepage-plan {
+    
+    position: relative;
+    height: 60vh;
+    width: 100%;
+} 
+.toggle-btn  {
+    color: black;
+}
+
+
+.bgd-img {
+  position: relative;
+  margin-left: 0.5%;
+  width: 99%;
+  height: 60vh;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 13px;
+  background-color: rgba(240, 248, 255, 0.511);
+}
+
+.overlay-plan {
+  position: relative;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.btns-container {
+    position: absolute;
+    top: 0.5%;right: 0%;
+    padding: 0px;
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    height: 10%;
+    
+    background-color: rgba(50, 116, 135, 0);
+}
+
+
+@media (max-width: 798px) {
+.text-home  {
+  position: absolute;
+  top: 1rem;
+  left: 70%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.text-home {
+    padding-right: 3rem;
+}
+
+.text-home h2 {
+    position: relative;
+    font-size: 1.3rem;
+    margin: 0.3rem ;
+    width: 20rem;
+    
+}
+
+  .overlay-plan {
+    padding-top: 10%;
+  }
+
+  .homepage-plan {
+    height: auto; 
+    min-height: 60vh; 
+  }
+
+  .bgd-img,
+  .overlay-plan {
+    height: auto;
+    min-height: 60vh;
+  }
+
+  .bgd-img {
+    height: 30vh;
+  }
 }
 
 
@@ -97,16 +151,16 @@ h1 {
 
 }
 #seaPhoto,#beachPhoto,#airplanePhoto {
-    border-radius: 50px;
+    border-radius: 80px;
     height: 50vh;
-    width: 10vw;
+    width: 15vw;
 
 }
 #beachPhoto {
-    border: 5px solid white;
+    border: 7px solid rgb(254, 252, 252);
     position: relative;
     right: 0;
-    margin-right: 20px;
+    right: 20%;
     margin-top: 30%;
 }
 #airplanePhoto {
@@ -133,16 +187,89 @@ p ,h6 {
 .side {
     height: 5%;
 }
-/*----------- 3compo :TOP-DESTINATIONS CSS---------*/
-.scroll-wrapper {
-    border-radius: 12px;
-    padding: 0;
-    margin: 1%;
-    width: 100%;
-    background-color: rgb(223, 243, 239);
+
+@media(max-width:650px){
+    #seaPhoto,#beachPhoto,#airplanePhoto {
+        display: none;
+    }
 }
 
+/*----------- 3compo :TOP-DESTINATIONS CSS---------*/
 
+.top-text h1 {
+    color: rgb(19, 59, 72);
+    margin-top: 0rem;
+    margin-left: -1rem;
+}
+
+.scroll-wrapper h1,h4 {
+      margin-left: 2rem;
+}
+ .destination img {
+    position: relative;
+    left: 0;
+    padding: 0rem;
+    margin: 0.01rem;
+    object-fit: cover;
+    width: 180px;
+    height: 250px;
+    border-radius: 8px;
+   
+} 
+
+.destination h5 {
+    margin-top: 0.3rem;
+}
+.destinations-scroll-wrapper {
+      margin-top: 3%;
+      margin-bottom:3% ;
+      margin-left: 1rem;
+    position: relative;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 23px;
+    overflow-x: hidden ;
+    overflow-y: hidden;
+    
+    
+} 
+
+ .destination {
+    background-color: rgb(234, 239, 239);
+    flex: 0 0 auto;
+    margin: 1rem;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.235);
+} 
+ .scroll-btn  {
+    position: relative;
+    
+    left: 5%;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(40, 100, 98); 
+    color:  rgb(223, 231, 230);
+    width: 100px;
+    height: 40px;
+}
+
+.scroll-btn :hover {
+    color:  rgb(40, 100, 98); 
+    background-color:  rgb(223, 231, 230);;
+   
+} 
+
+ bottom-text {
+    margin-top: 50px;
+}
+.icon-b {
+    color: rgb(208, 209, 212);
+}
+.icon-b h5 {
+    color: rgb(181, 182, 183);
+}
 
 .Top-Destinations {
     margin: 0%;
@@ -157,7 +284,7 @@ p ,h6 {
     border-radius: 12px;
    
 }
-.top-text {
+.top-text { 
   margin-left: 3%;
 
 }
@@ -165,15 +292,19 @@ p ,h6 {
     margin-left: 4rem;
 }
 
+@media(max-width:796px){  
 
-.destination img {
-    position: relative;
-    left: 0;
-    
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
+  .destination img {
+    width: 150px;
+    height: 20vh;
     border-radius: 12px;
+  }
+
+  .scroll-wrapper {
+    font-size:0.7rem ;
+  }
+
+
 }
 .destinations-scroll-wrapper {
    
@@ -181,7 +312,6 @@ p ,h6 {
       margin-bottom:3% ;
       margin-right: 0.5%;
     position: relative;
-    
     scroll-behavior: smooth;
     display: flex;
     gap: 23px;
@@ -192,10 +322,10 @@ p ,h6 {
 }
 
 html , body {
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
   scroll-behavior: smooth;
 }
+
 .destination {
     flex: 0 0 auto;
     flex-wrap: wrap;
@@ -223,33 +353,59 @@ html , body {
 }
 
 /*------4compo:SHOW PLAN STYLE ---------------------*/
-.show-container {
-    
+
+.show-plan-container {
+    margin-top: 10vh;
+}
+
+.show-plan {
     display: flex;
+    flex-direction: column;
+   background-color: rgba(56, 54, 54, 0.352);
+   padding: 0;
+   height: 37vh;
+   border-bottom-right-radius: 30px;
+   border-top-left-radius: 20px;
+   border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.637);
+
+}
+
+.show-plan h2  {
+    margin-left:6rem ;
+    margin-top: 2rem;
+    color: aliceblue;
+}
+
+.show-plan h5  {
+    color: aliceblue;
+    margin-top: 4rem;
+}
+.show-plan-container {
+     display: flex;
     justify-content: center;
     align-items: end;
     gap: 45px;
-    
- 
 }
-.show-btn  {
+.s-btn  {
+    margin-top: 1rem;
+    position: relative;
     border-radius: 5px;
     border: none;
     color:  rgb(40, 100, 98); 
     background-color:  rgb(249, 252, 252);;
-    width: 70px;
-    height: 30px;
-    margin-left: 38%;
+    width: 200px;
+    height: 45px;
+    margin-left: 14%;
+    font-size: large;
+    z-index: 10;
     
 }
 
-.show-btn:hover {
-    border-radius: 5px;
-    border: none;
+.s-btn:hover {
     background-color:  rgb(40, 100, 98); 
     color:  rgb(244, 248, 248);;
-    width: 70px;
-    height: 30px;
+   
     
     
 
@@ -270,7 +426,28 @@ html , body {
     background-color: rgba(74, 74, 74, 0.107);
  }
 
+@media(max-width:796px){
+    .show-container {
+        display: flex;
+        flex-direction:column ;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
 
+@media(max-width:650px){
+    .show-plan-container {
+        position: relative;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
  
 
 
@@ -280,10 +457,17 @@ html , body {
    top: 30px;
    height: 30vh;
 }
-.top-comments {
+.top-comments h1 {
     position: relative;
-    left: 30%;
+    left: 20%;
 }
+
+.top-comments h4 {
+    margin-top: 5rem;
+    position: relative;
+    left: 35%;
+}
+  
   
   .comments-container {
     margin-bottom:auto ;
@@ -302,7 +486,7 @@ html , body {
 .scroll-comments-btn {
     position: relative;
     display:flex;
-    gap: 80%;
+    gap: 70%;
     margin-left: 13%;
     top: 30%;
    
@@ -316,10 +500,11 @@ html , body {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    background-color: rgba(19, 25, 42, 0.612);
+    background-color: rgba(19, 29, 42, 0.612);
     width: 350px;
     height: auto;
     border-radius: 12px;
+    margin-left: 2rem;
 } 
 
 .scroll-comment {
@@ -355,27 +540,95 @@ html , body {
     
 }
 
+@media(max-width:450px){
+    .top-comments h1 {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        margin-left: -2rem;
+    }
+    .top-comments h4 {
+       
+        margin-left: 0.5rem;
+    }
+
+    .comment {
+        position: relative;
+        margin-top: 2rem;
+        height: 30vh;
+        margin-left: 0.5rem;
+       
+    }
+
+    .scroll-comments-btn {
+       margin-left: 1rem;
+    }
+
+    .comment h1  {
+        font-size: 25px;
+    }
+
+    .comment h4 {
+        font-size: 0.9rem;
+    }
+}
+
 
 
 /*---------6compo:footer ------*/
 
- .footer-container {
+ .footer-container-plan {
     position: relative;
-    top: 40vh;
     display: flex;
-    grid-template-columns: 1fr 1fr ;
-    flex-wrap: wrap;
-    gap: 2px;
-    margin-top: 80px;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: clamp(0.1rem ,2.5rem ,2.5rem);
+    margin-top: 50vh;
+    padding-top: -2rem;
     max-width: 100%;
-    height: 60vh;
+    height: 40vh;
     background-color: rgb(36, 101, 99); 
 } 
-.footer-item {
+.footer-item-s {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10%;
-    margin-top: 7vh;
-    margin-left: 16%;
+    gap: 0.8rem;
+    margin-top: 6vh;
+    margin-left: 8rem;
 } 
+
+@media(max-width:876px){
+    .footer-plan {
+        margin-top: 27rem;
+    }
+
+    .footer-container-plan {
+    display: flex;
+    grid-template-rows: 1fr 1fr ;
+    gap: 1rem;
+   
+    margin-top: 50vh;
+    padding-top: -2rem;
+    max-width: 100%;
+    height: 70vh;
+    background-color: rgb(36, 101, 99); 
+} 
+.footer-item-plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 6vh;
+    margin-left: 2rem;
+} 
+
+}
+
+@media(max-width:540px){
+    .footer-container-plan {
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr;
+        height: 60rem;
+    }
+}

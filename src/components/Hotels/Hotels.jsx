@@ -17,15 +17,18 @@ const Hotels = () => {
                  <Research />
             </div>
              
-            <div className='compo3'>
+            <div >
                  <Destinations />
-            </div>
 
-             <div className='compo3'>
+               
+            </div>
+                <br />
+
+              <div className='compo4-hotels'>
                  <Kayaking />
             </div>
-             
-                 <div className='compo3'>
+          
+            <div className='compo5-hotels'>
                  <Footer />
             </div>
 

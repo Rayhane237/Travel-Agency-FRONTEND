@@ -15,20 +15,19 @@ const MidContent = () => {
 
          <div className='icons-container'>
             <div className='icon-box' >
-                  <MdCardTravel   size={100}/>
-                  <h5>Provide hassle free travel at affordable price</h5>
+                <h5><MdCardTravel    size={100}/>Provide hassle free travel at affordable price</h5>
             </div>
             <div className='icon-box'>
-                  <TbBrandBooking size={100}/>
-                  <h5>Easy booking and comfortable travel.</h5>
+                 
+                  <h5><TbBrandBooking size={100}/> <br />Easy booking and comfortable travel.</h5>
             </div>
             <div className='icon-box'>
-                   <TbTimezone  size={100}/>
-                   <h5>Offers great cuisines & experience unique cultures.</h5>
+                   
+                   <h5> <TbTimezone  size={100}/> <br />Offers great cuisines & experience unique cultures.</h5>
             </div>
             <div className='icon-box'>
-                   <RiCustomerService2Fill size={100}/>
-                   <h5>Customer Service 24/7</h5>
+                  <h5> <RiCustomerService2Fill size={100}/>
+                    <br /> Customer Service 24/7</h5>
             </div>
 
          </div>

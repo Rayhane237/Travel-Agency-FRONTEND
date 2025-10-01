@@ -9,14 +9,14 @@ const Kayaking = () => {
               
                   
   return (
-    <div className='k-body'>
-      <div className='k-top-text'>
+    <div className='f-body'>
+      <div className='f-top-text'>
         <h3 style={{color:" rgb(36, 102, 117)"}}>Kayaking</h3>
         <h2 style={{color:"black"}}>Discover your love</h2>
      </div>
-        <div className='kayaking-container'>
+        <div className='kayaking-container-f'>
        
-          <div className='kayaking-item'>
+          <div className='kayaking-item-f'>
                <div className='baja'>
                  <h2 >Kayaking in Baja California</h2>
                  <h3 className='baja-price'> From $600</h3>

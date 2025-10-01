@@ -3,9 +3,18 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-     
-        <div className='footer-container'>
-              <div className='footer-item'>
+         <div className='footer-f'>
+
+        <div className='footer-container-f'>
+             
+             <div className='footer-item-f'>
+                 <h5 style={{color:"rgba(255, 255, 255, 1)"}}>Our Activities</h5>
+                 <h6 style={{color:"rgba(198, 199, 199, 1)"}} > Kayaking</h6>
+                 <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Cruising & Sailing</h6>
+               
+             </div>
+
+              <div className='footer-item-f'>
                  <h5 style={{color:"rgba(255, 255, 255, 1)"}}>Links</h5> 
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Flights</h6>
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Stays</h6>
@@ -15,23 +24,16 @@ const Footer = () => {
                 </div>
 
 
-             <div className='footer-item'>
-                 <h5 style={{color:"rgba(255, 255, 255, 1)"}}>Our Activities</h5>
-                 <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Tour</h6>
-                 <h6 style={{color:"rgba(198, 199, 199, 1)"}} > Kayaking</h6>
-                 <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Cruising & Sailing</h6>
-               
-             </div>
 
 
-             <div className='footer-item'>
+             <div className='footer-item-f'>
                  <h5 style={{color:"white"}}>About Us</h5>
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Our Story</h6>
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Work with us</h6>
 
              </div>
 
-             <div className='footer-item'>
+             <div className='footer-item-f'>
                  <h5 style={{color:"rgba(255, 255, 255, 1)"}}>Contact</h5>
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Address: Holandia </h6>
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Millennium City, PH17</h6>
@@ -39,8 +41,12 @@ const Footer = () => {
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Email: phnes.travels@gmail.com </h6>
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Maps: Millennium City, Accra</h6>
              </div>
+
+           
+
                  
         </div>
+    </div>
     </div>
   )
 }

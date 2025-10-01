@@ -3,7 +3,9 @@ import "./Discover.css"
 //import { useNavigate } from 'react-router-dom'
 import HeaderDiscover from './CompoDiscover/HeaderDiscover'
 import SouthIsland from './CompoDiscover/SouthIsland'
-import NaturalFeatures from './CompoDiscover/NaturalFeatures'
+import NaturalFeatures from './CompoDiscover/NaturalFeatures';
+
+
 import FooterDiscover from './CompoDiscover/FooterDiscover'
 const Discover = () => {
 
@@ -13,14 +15,15 @@ const Discover = () => {
                   <HeaderDiscover />
             </div>
 
-             <div className='compo2'>
+             <div >
                   <SouthIsland />
             </div>
-              
-                          
-             <div className='compo3'>
-                <NaturalFeatures />
-              </div>
+
+             <div>
+              <NaturalFeatures />
+            </div>
+            
+
 
             <div className='compo4'>
                 <FooterDiscover />

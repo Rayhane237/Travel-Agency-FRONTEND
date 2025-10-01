@@ -52,7 +52,6 @@ const Comments = () => {
                      
                                   <div className='comment' >
                                       <h1 style={{color:"orange"}}> <LiaStarSolid />  <LiaStarSolid /> <LiaStarSolid /> <LiaStarSolid /> </h1>
-                                      
                                       <h3 style={{color:"white"}}>Salim</h3>
                                       <br />
                                       <h4 style={{color:"white"}}>

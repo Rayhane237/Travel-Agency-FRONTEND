@@ -16,14 +16,16 @@ const AboutUs = () => {
     <div>
            <div className='compo1'>
             <HeaderAbout/>
-           </div>
-            <br />
 
-           <div className='compo2'>
+           </div>
+             <br />
+           
+           <div className='top-compo'>
+            
             <TopContent/>
            </div>
             <br />
-            
+         
             <div className='compo3'>
             <MidContent />
            </div>

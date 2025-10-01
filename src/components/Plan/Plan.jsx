@@ -22,11 +22,12 @@ function Plan() {
     try {
       const res = await axios.get("http://localhost:5000/test", {
         headers: {
-          Authorization: `Bearer ${token}`
+         "Authorization": `Bearer ${token}`
         }
       });
     } catch (err) {
       if (err.status === 401 || err.status === 403) {
+        localStorage.removeItem("token")
         navigate("/Login");
       }
     }

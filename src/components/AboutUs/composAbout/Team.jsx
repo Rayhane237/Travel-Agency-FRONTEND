@@ -12,34 +12,34 @@ const Team = () => {
         <br />
             <div className='team-header'>
              <h2 style={{color:"black"}}>Meet our teams</h2>
-             <h6 style={{color:"rgb(36, 113, 120)"}}>Meet the people who help keep Phnes.Travels running</h6>
+             <h3 style={{color:"rgb(36, 113, 120)"}}>Meet the people who help keep Phnes.Travels running</h3>
          </div>
             <br />
         <div className='team-section'>
              <div className='team'>
                   <img src={team1} className='team-img'/>
-                  <h5>Viola Gates </h5>
-                  <h6>International Relations</h6>
+                  <h3>Viola Gates </h3>
+                  <h4>International Relations</h4>
              </div>
               <div className='team'>
                   <img src={team2} className='team-img' />
-                  <h5>Henry Cemit</h5>
-                  <h6>Web Designer</h6>
+                  <h3>Henry Cemit</h3>
+                  <h4>Web Designer</h4>
              </div>
              <div className='team'>
                   <img src={team3} className='team-img' />
-                  <h5>Kojo Apei</h5>
-                  <h6>Marketing Director</h6>
+                  <h3>Kojo Apei</h3>
+                  <h4>Marketing Director</h4>
              </div>
              <div className='team'>
                   <img src={team4} alt="" className='team-img' />
-                  <h5>Karen Pit</h5>
-                  <h6>Medical Check</h6>
+                  <h3>Karen Pit</h3>
+                  <h4>Medical Check</h4>
              </div>
              <div className='team'>
                   <img src={team5} alt="" className='team-img' />
-                  <h5>Doris Heathen</h5>
-                  <h6>Aviation Head</h6>
+                  <h3>Doris Heathen</h3>
+                  <h4>Aviation Head</h4>
              </div>
              
             

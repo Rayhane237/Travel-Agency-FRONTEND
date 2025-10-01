@@ -21,15 +21,15 @@ const Flights = () => {
        </div>
           <br />
           
-        <div className='compo3'>
+        <div >
            <Kayaking />
-
+          
        </div>
     
-        <div className='compo4'>
-          <Footer />
-        </div>
-
+           
+             <div className='compo4'>
+             <Footer />
+            </div>
 
        
        

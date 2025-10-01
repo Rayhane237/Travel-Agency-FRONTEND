@@ -11,21 +11,21 @@ const BottomIcons = () => {
        <br />
                    <div className='icons-container'>
                       <div className='icon-b' >
-                            <MdModeOfTravel size={100}/>
-                            <h5>Travel</h5>
+                           
+                            <h5> <MdModeOfTravel size={100}/> <br />Travel</h5>
                       </div>
                       <div className='icon-b'>
-                             <PiIslandFill  size={100}/>
-                             <h5>Island Tour</h5>
+                             
+                             <h5>   <PiIslandFill  size={100}/> <br />Island Tour</h5>
                             
                       </div>
                       <div className='icon-b'>
-                              <FaCity size={100}/>
-                             <h5>City tour</h5>
+                             
+                             <h5>  <FaCity size={100}/> <br />City tour</h5>
                       </div>
                       <div className='icon-b'>
-                              <FaMapMarkedAlt  size={100}/>
-                              <h5>Explore World</h5>
+                            
+                              <h5>  <FaMapMarkedAlt  size={100}/> <br />Explore World</h5>
                            
                       </div>
           

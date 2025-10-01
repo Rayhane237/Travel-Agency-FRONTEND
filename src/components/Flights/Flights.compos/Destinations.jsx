@@ -19,13 +19,13 @@ const Destinations = () => {
           navigate("/BookFlight")
          }
          
-            const imgSea = {
+        const imgSea = {
          backgroundImage: 
           `url(${Sea})  `,
          backgroundSize: 'cover', 
          backgroundPosition: 'right', 
          backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
+         height: '36vh', 
          width: "250px",
          borderRadius:"10px" ,
        };
@@ -36,7 +36,7 @@ const Destinations = () => {
          backgroundSize: 'cover', 
          backgroundPosition: 'right', 
          backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
+         height: '36vh', 
          width: "250px",
          borderRadius:"10px" ,
        };
@@ -47,7 +47,7 @@ const Destinations = () => {
          backgroundSize: 'cover', 
          backgroundPosition: 'right', 
          backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
+         height: '36vh', 
          width: "250px",
          borderRadius:"10px" ,
        };
@@ -58,7 +58,7 @@ const Destinations = () => {
          backgroundSize: 'cover', 
          backgroundPosition: 'right', 
          backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
+         height: '36vh', 
          width: "250px",
          borderRadius:"10px" ,
        };
@@ -68,7 +68,7 @@ const Destinations = () => {
          backgroundSize: 'cover', 
          backgroundPosition: 'right', 
          backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
+         height: '36vh', 
          width: "250px",
          borderRadius:"10px" ,
        };
@@ -78,7 +78,7 @@ const Destinations = () => {
          backgroundSize: 'cover', 
          backgroundPosition: 'right', 
          backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
+         height: '36vh', 
          width: "250px",
          borderRadius:"10px" ,
        };
@@ -89,7 +89,7 @@ const Destinations = () => {
          backgroundSize: 'cover', 
          backgroundPosition: 'right', 
          backgroundRepeat: 'no-repeat', 
-         height: '40vh', 
+         height: '36vh', 
          width: "250px",
          borderRadius:"10px" ,
        };
@@ -98,18 +98,17 @@ const Destinations = () => {
     
   return (
         <div>
-                <br />
-                   <div className='top-text'>
-                        <h3 style={{color:" rgb(36, 102, 117)"}}>Top Destinations</h3>
-                       <h2 style={{color:"black"}}>Discover your love </h2>
-                    
-                   </div>
 
+           <div className='top-text'>
+            <h3 style={{color:"rgba(21, 63, 72, 1)"}}>Top destinations</h3>
+            <h1 style={{color:"black"}}>Discover your love</h1>
+           </div>
+          
         <div className='-container'>
             <div className='flight-item' >
                 <div style={imgTaj}  >
                     <div className='text-f'>  
-                       <h1 >India</h1>     
+                       <h1  >India</h1>     
                         <h3>Taj Mahal</h3>
                         <h1 className='price'>$600</h1>
                     </div>
@@ -178,7 +177,7 @@ const Destinations = () => {
                 <div style={imgTour}  >
                     <div className='text-f'>  
                        <h1 >Italy</h1>     
-                        <h3> the famouse monument in italy</h3>
+                        <h3> monuments in italy</h3>
                         <h1 className='price'>$460</h1>
                     </div>
                   

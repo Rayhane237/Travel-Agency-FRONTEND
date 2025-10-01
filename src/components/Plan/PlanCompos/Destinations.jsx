@@ -16,30 +16,41 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 
 const TopDestinations = () => {
-      
+        
+        const scrollRef = useRef(null);
+
+  // scroll functions
+  const scrollLeft = () => {
+    scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+  };
+
   
-      
-          const scrollRef = useRef(null);
-      
-          const scrollLeft =()=> {
-              scrollRef.current.scrollBy({left: -300,behavior:"smooth"})
-          }
-          const scrollRight =()=> {
-              scrollRef.current.scrollBy({left:300,behavior:"smooth"})
-          }
- 
+  
     return(  
  
     <div className='scroll-wrapper'>
         <br />
-        <div className='top-text'>
-                 <h3 style={{color:"dark-green"}}>Top Destinations</h3>
-            <h2 style={{color:"black"}}>Discover your love </h2>
-         
-        </div>
+       
+           <h4 style={{color:"rgba(21, 63, 72, 1)"}}>Top destinations</h4>
+            <h1 style={{color:"black"}}>Discover your love</h1>
       
-         <button className='scroll-btn' onClick={scrollRight}><FaArrowRight  />  </button>
-        <div className='destinations-scroll-wrapper' ref={scrollRef} >
+
+       <div style={{ display: "flex", gap: "70%", margin: "10px" }}>
+          <button className="scroll-btn" onClick={scrollLeft}>
+             <FaArrowLeft /> Left
+          </button>
+          <button className="scroll-btn" onClick={scrollRight}>
+              Right <FaArrowRight />
+          </button>
+      </div>
+
+      
+    
+          <div className='destinations-scroll-wrapper' ref={scrollRef}> 
 
              <div className='destination' >
                   <img src={Dubai} alt="" />
@@ -71,7 +82,7 @@ const TopDestinations = () => {
                 </div>
                   <div className='destination'>
                   <img src={Taj} alt="" />
-                 <h5 style={{color:"black"}}>Taj Mahal India</h5>
+                 <h5 style={{color:"black"}}>Taj Mahal</h5>
                 </div> 
                  <div className='destination'>
                   <img src={Egypt} alt="" />
@@ -81,11 +92,9 @@ const TopDestinations = () => {
                   <img src={old} alt="" />
                  <h5 style={{color:"black"}}>Singaphore</h5>
                 </div>
-
-
+        
         </div>
-        <button className='scroll-btn' onClick={scrollLeft}>< FaArrowLeft  /></button>
-       
+      
     </div>
   )
 }

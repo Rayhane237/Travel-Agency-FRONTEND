@@ -1,28 +1,39 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Kayaking = () => {
+           const navigate = useNavigate()
+         const navBookHotels =()=>{
+          navigate("/BookHotel")
+         }
+              
+
   return (
-    <div className='k-body'>
-    <div className='k-top-text'>
-        <h3 style={{color:" rgb(36, 102, 117)"}}>Top Hotels</h3>
+    <div className='h-body'>
+      <div className='k-top-text'>
+        <h3 style={{color:" rgb(36, 102, 117)"}}>Kayaking</h3>
         <h2 style={{color:"black"}}>Discover your love</h2>
      </div>
-        <div className='kayaking-container'>
+        <div className='kayaking-container-f'>
        
-          <div className='kayaking-item'>
+          <div className='kayaking-item-f'>
                <div className='baja'>
-                 <h2 >Discover  the best Hotel in Greece</h2>
-                 <h3 className='baja-price'> From $400</h3>
+                 <h2 >Kayaking in Greece</h2>
+                 <h3 className='baja-price'> From $600</h3>
                </div>
                    <br />
-                 <h5>Nestled on the cliffs of Santorini, Perivolas Hotel stands out as one of Greece’s most iconic luxury retreats. Carved into the volcanic rock of Oia, its minimalist cave-style suites offer breathtaking views of the Aegean Sea, blending traditional Cycladic architecture with serene modern elegance. The infinity pool, perched above the caldera, is a dreamlike setting for honeymooners and design lovers alike. With impeccable service, tranquil ambiance, and a location that captures the essence of Greek island beauty, Perivolas is more than a hotel—it’s an experience that defines indulgence.</h5>
-                <button  className='baja-btn' >Book Flight </button>
+                 <h5>Adventure cruising is more than a growing trend to connect with nature, wildlife, and yourself. It’s a community a adventurers that is here to stay. With luxurious accommodations and unmatched scenery, our Baja kayaking is the perfect escape.</h5>
+                <button onClick={navBookHotels} className='baja-btn' >Book Flight </button>
           </div> 
 
      </div> 
 
 
     </div>
+    
+
+   
+
   )
 }
 
