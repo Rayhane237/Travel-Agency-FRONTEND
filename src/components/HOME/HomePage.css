@@ -26,7 +26,11 @@ body {
   font-family: 'Lora', serif;
 }
 
-h1, h2,p, button {
+.menu-bar h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2,p,  button {
     color: rgb(102, 60, 6);
   font-family: 'Montserrat', sans-serif;
 
@@ -38,7 +42,7 @@ p {
     position: relative;
     margin-top: 80px;
 }
-.login,.sign-up{
+.login-button,.sign-up-button{
     position: relative;
     color: rgb(118, 82, 20);
     background-color: rgb(246, 227, 211);
@@ -49,18 +53,18 @@ p {
     font-size: x-large;
 
 }
-.sign-up {
+.sign-up-button {
   margin-top: 20px;
 }
-.sign-up:hover {  
+.sign-up-button:hover {  
     position: relative;
     color: rgb(250, 250, 250);
     background:rgb(112, 81, 30) ;
 }
-.login {
+.login-button {
   margin-top: 30px;
 }
-.Login:hover {  
+.Login-button:hover {  
     position: relative;
     color: antiquewhite;
     background:rgb(102, 60, 6) ;

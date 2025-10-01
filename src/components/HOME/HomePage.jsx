@@ -30,9 +30,9 @@ const HomePage = () => {
                  <h3 style={{color:"white"}}>   Travel the way you wish to go with Phnes Travels helping you discover, live and travel at your own pace. </h3>
                   <div className='btn-container'>  
                   
-                       <button onClick={navigateUser} className='login'>Sign up</button> 
+                       <button onClick={navigateUser} className='login-button'>Sign up</button> 
                          <br />
-                      <button  onClick={handleLoginClick} className='sign-up'>Login</button>
+                      <button  onClick={handleLoginClick} className='sign-up-button'>Login</button>
                       <br />
                
                   </div>
