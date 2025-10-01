@@ -8,7 +8,7 @@ import Plan from './components/Plan/Plan.jsx'
 import Flights from './components/Flights/Flights.jsx'
 import BookFlight from "./components/Flights/BookFlight/BookFlights.jsx"
 import Hotels from './components/Hotels/Hotels.jsx'
-import BookHotel from './components/Hotels/BookHotel.jsx'
+
 import Discover from "./components/Discover/Discover.jsx"
 import AboutUs from './components/AboutUs/AboutUs.jsx'
 
@@ -52,10 +52,7 @@ const router = createBrowserRouter([
            element: <Hotels />
       },
 
-     { 
-        path:"/BookHotel",
-       element:<BookHotel />, 
-      },
+     
       {
         path:"/Discover",
         element:<Discover />,
@@ -64,11 +61,8 @@ const router = createBrowserRouter([
         path:"/About",
         element:<AboutUs/>,
       },
-      //    {
-      //   path:"/Contact",
-      //   element:<Contact/>,
-      // },
      
+      
        
       
           

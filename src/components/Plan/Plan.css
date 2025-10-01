@@ -394,7 +394,8 @@ p ,h6 {
 .scroll-btn :hover {
     color:  rgb(40, 100, 98); 
     background-color:  rgb(223, 231, 230);;
-   
+    z-index: 10;
+    height: 40px;
 } 
 
  bottom-text {
@@ -622,11 +623,12 @@ html , body {
 .scroll-comments-btn {
     position: relative;
     display:flex;
-    gap: 70%;
+    gap: 80%;
     margin-left: 13%;
     top: 30%;
    
 }
+
 .comment {
     position: relative;
      flex:0 0 auto;
@@ -655,11 +657,9 @@ html , body {
 }
 
  .scroll-comment:hover {
-    
-    border: none;
     color:  rgb(45, 70, 180); 
     background-color:  rgb(255, 255, 255);;
-      height: 30px;
+    z-index: 10;
 }
 .pov {
     display: flex;

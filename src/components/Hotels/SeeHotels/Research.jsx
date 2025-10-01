@@ -18,7 +18,7 @@ const Research = () => {
                            <img className='img-search' src={search} alt="" /> 
                              <div className='img-search'>
                                   <h4 style={{color:"black"}}>Bora Bora</h4>
-                                  <h6>305 places</h6>
+                                  <h6>305.places</h6>
                              </div>
                         </div>
             
@@ -27,7 +27,7 @@ const Research = () => {
                              <div className='img-search'>
                                     <h4 style={{color:"black"}}>Hawai</h4>
                             
-                            <h6>315 places</h6>
+                            <h6>315,places</h6>
                              </div>
                        </div>
                         <div className='search'>
@@ -35,7 +35,7 @@ const Research = () => {
                              <div className='img-search'>
                                   <h4 style={{color:"black"}}>Bora Bora</h4>
                             
-                                  <h6>305 places</h6>
+                                  <h6>305.places</h6>
                              </div>
                        </div>
                          <div className='search'>
@@ -43,7 +43,7 @@ const Research = () => {
                                  <div className='img-search'>
                                         <h4 style={{color:"black"}}>Male Maldives</h4>
                             
-                                       <h6>300 places</h6>
+                                       <h6>300.places</h6>
                                  </div>
                        </div>
                       

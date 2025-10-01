@@ -1,13 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+
 
 const Kayaking = () => {
-           const navigate = useNavigate()
-         const navBookHotels =()=>{
-          navigate("/BookHotel")
-         }
-              
-
+          
   return (
     <div className='h-body'>
       <div className='k-top-text'>
@@ -23,7 +18,7 @@ const Kayaking = () => {
                </div>
                    <br />
                  <h5>Adventure cruising is more than a growing trend to connect with nature, wildlife, and yourself. It’s a community a adventurers that is here to stay. With luxurious accommodations and unmatched scenery, our Baja kayaking is the perfect escape.</h5>
-                <button onClick={navBookHotels} className='baja-btn' >Book Flight </button>
+                <button  className='baja-btn' >Book Hotels </button>
           </div> 
 
      </div> 

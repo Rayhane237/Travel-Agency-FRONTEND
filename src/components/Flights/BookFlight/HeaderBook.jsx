@@ -15,7 +15,7 @@ const HeaderBook = () => {
        const navigate = useNavigate()
 
      const navigateHome =()=>{
-      navigate("/")
+      navigate("/Plan")
      }
 
       const navigateFlights =()=>{
@@ -49,7 +49,7 @@ const HeaderBook = () => {
                            </button>
                   )}
                                     <h2>PhnesTravel</h2>
-                                   <button className='navbar-btn' onClick={navigateHome}>Home</button>
+                                   <button className='navbar-btn' onClick={navigateHome}>Plan</button>
                                    <button className='navbar-btn' onClick={navigateFlights}>Flights</button>
                                    <button className='navbar-btn' onClick={navigateHotels}>Hotels</button>
                                    <button className='navbar-btn' onClick={navigateDiscover}>Discover</button>
