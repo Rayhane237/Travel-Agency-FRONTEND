@@ -70,7 +70,7 @@ const SignUp =()=>{
        password:data.passWord,
      }
       try{ 
-      const res = await axios.post("http://localhost:5000/register",clientData)
+      const res = await axios.post(`${import.meta.env.VITE_SEVER_HOST}/register`,clientData)
       
         if(res.status ===201 || res.status===304){
         toast.success("Account created successfully!");
@@ -184,7 +184,7 @@ const SignUp =()=>{
             <button  type="submit" className="sign-btn" onClick={onClickLogic} >Create Account</button>
             <h5 >
             Already have an account?{' '}
-            <a href="http://localhost:5173/Login">Login</a>
+            <a href="localhost:5173/Login">Login</a>
           </h5>
          </div>
       

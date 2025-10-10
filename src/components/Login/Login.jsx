@@ -56,7 +56,7 @@ const Login = () => {
      };
     
      try{ 
-         const res = await axios.post("http://localhost:5000/login",clientData);
+         const res = await axios.post(`${import.meta.env.VITE_SEVER_HOST}/login`,clientData);
           if(res.status ===200){
             localStorage.setItem("token",res.data.token)
             navigate("/Plan")
@@ -127,7 +127,7 @@ const Login = () => {
 
           <div className='item3'>
             <button type='submit'  className='login-btn'>Login</button>
-            <h5>Don’t have an account?<a href="http://localhost:5173/Signup">Signup</a></h5>
+            <h5>Don’t have an account?<a href="http://localhost:5173/SignUp" ></a><h5>Signup</h5></h5>
           </div>
         </form>
       </div>
