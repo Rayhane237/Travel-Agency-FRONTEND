@@ -53,7 +53,7 @@ const HeaderDiscover = () => {
                       <div className='black'> 
                               {!sidebarOpen && (
                                             <button className='navbar-toggle-btn' onClick={toggleSidebar}>
-                                                                        <IoIosMenu style={{color:"black"}} />
+                                                                        <IoIosMenu style={{color:"grey"}} />
                                                                     </button>
                                                      
                                                                 )}

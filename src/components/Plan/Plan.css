@@ -19,7 +19,7 @@
 }
 
 .navbar-container {
-    position: relative;
+    position: fixed;
     background-color: rgb(255, 255, 255);
     height: 5vh;
     display: flex;
