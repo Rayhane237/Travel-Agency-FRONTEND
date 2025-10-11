@@ -20,7 +20,7 @@ function Plan() {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await axios.get(`${import.meta.env.VITE_SEVER_HOST}/test`,
+      const res = await axios.get(`${import.meta.env.VITE_SERVER_HOST}/test`,
       {
         headers: {
          "Authorization": `Bearer ${token}`

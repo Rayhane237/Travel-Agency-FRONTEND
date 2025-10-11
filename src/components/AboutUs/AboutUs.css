@@ -340,6 +340,16 @@
 }
 
 
+@media(max-width:330px){
+    .team-container {
+    margin-top: 110vh;
+     background-color: rgba(127, 255, 212, 0);
+   }
+}
+
+
+
+
 /*-------compo5:bottom icons-------*/
  
 
@@ -447,10 +457,13 @@
       margin-top: 30vh;
     }
     .footer-container-a {
-       
+        height: 60vh;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
         display: grid;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr;
-        height: 60rem;
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr   ;
+       
     }
+
 }

@@ -62,6 +62,7 @@
 
   
 .navbar-container {
+  
   top: 0;
    left: -850px; 
   width: 290px;
@@ -343,6 +344,12 @@
         margin-top: 30vh;
         padding: 0.3rem;
     }
+
+    .natural-pics {
+        flex-direction: column;
+        margin-left: -1.5rem;
+        
+    }
 }
 
 
@@ -401,13 +408,16 @@
     .footer-discover {
       margin-top: 30vh;
     }
-    .footer-container-d {
-       
+     .footer-container-d {
+        height: 60vh;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
         display: grid;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr;
-        height: 60rem;
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr   ;
+       
     }
+
 }
 
 

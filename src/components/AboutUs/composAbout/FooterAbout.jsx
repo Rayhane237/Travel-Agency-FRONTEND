@@ -22,7 +22,7 @@ const FooterAbout = () => {
 
              </div>
 
-              <div className='footer-item-a'>
+              <div className='footer-item-a' >
                  <h5 style={{color:"rgba(255, 255, 255, 1)"}}>Links</h5> 
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Flights</h6>
                  <h6 style={{color:"rgba(198, 199, 199, 1)"}}> Stays</h6>

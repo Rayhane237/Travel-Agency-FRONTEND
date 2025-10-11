@@ -39,12 +39,12 @@ const TopDestinations = () => {
             <h1 style={{color:"black"}}>Discover your love</h1>
       
 
-       <div style={{ display: "flex", gap: "70%", margin: "10px" }}>
+       <div className='scroll-buttons-container' style={{ display: "flex", gap: "70%", margin: "10px" }}>
           <button className="scroll-btn" onClick={scrollLeft}>
-             <FaArrowLeft /> Left
+             <FaArrowLeft /> 
           </button>
           <button className="scroll-btn" onClick={scrollRight}>
-              Right <FaArrowRight />
+               <FaArrowRight />
           </button>
       </div>
 

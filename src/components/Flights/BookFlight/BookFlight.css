@@ -241,11 +241,14 @@ label {
 
 @media(max-width:540px){
     
-    .footer-container-b {
-        margin-top: 10vh;
+     .footer-container-b {
+        height: 60vh;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
         display: grid;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr;
-        height: 50rem;
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr   ;
+       
     }
+
 }

@@ -222,6 +222,13 @@
   .search {
     width: 210px;
   }
+  .search h4 {
+    font-size: 1.3rem;
+  }
+
+  .top-search {
+    margin-left: 3rem;
+  }
 }
 /*------destinations------------------------------ ---*/
 .d-body h2 ,h4 {
@@ -233,6 +240,10 @@
     margin-top: 4rem;
   }
 
+.flight-item {
+ box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.571);
+ border-radius: 12px;
+}
 
 
 @media(max-width:350px){
@@ -341,10 +352,15 @@
 
 
 @media(max-width:540px){
-    .footer-container-hotel {
+   
+     .footer-container-hotel {
+        height: 60vh;
+       
+        padding-bottom: 2rem;
         display: grid;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr;
-        height: 60rem;
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr   ;
+       
     }
+
 }

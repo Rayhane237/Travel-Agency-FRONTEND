@@ -70,7 +70,7 @@ const SignUp =()=>{
        password:data.passWord,
      }
       try{ 
-      const res = await axios.post(`${import.meta.env.VITE_SEVER_HOST}/register`,clientData)
+      const res = await axios.post(`${import.meta.env.VITE_SERVER_HOST}/register`,clientData)
       
         if(res.status ===201 || res.status===304){
         toast.success("Account created successfully!");

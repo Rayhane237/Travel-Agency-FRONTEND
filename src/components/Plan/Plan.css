@@ -130,7 +130,7 @@
 }
 
 
-html h3 {
+html h3 ,h6 ,h5,h4 {
     font-family: 'Montserrat', sans-serif;;
 }
 
@@ -177,7 +177,7 @@ html h3 {
     width: 100%;
 } 
 .toggle-btn  {
-    color: black;
+    color: rgb(123, 119, 119);
 }
 
 
@@ -391,11 +391,11 @@ p ,h6 {
     height: 40px;
 }
 
-.scroll-btn :hover {
+.scroll-btn:hover {
     color:  rgb(40, 100, 98); 
     background-color:  rgb(223, 231, 230);;
     z-index: 10;
-    height: 40px;
+   
 } 
 
  bottom-text {
@@ -488,6 +488,7 @@ html , body {
     width: 100px;
     height: 50px;
 }
+
 
 /*------4compo:SHOW PLAN STYLE ---------------------*/
 
@@ -761,11 +762,16 @@ html , body {
 }
 
 @media(max-width:540px){
-    .footer-container-plan {
+  
+     .footer-container-plan {
+        padding-right: 6rem;
+        height: 60vh;
+        padding-bottom: 2rem;
         display: grid;
-        gap: 1rem;
-        grid-template-rows: 1fr 1fr;
-        height: 60rem;
+        gap: 0rem;
+        grid-template-columns: 1fr 1fr   ;
+       
     }
+
 }
 

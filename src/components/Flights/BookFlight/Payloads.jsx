@@ -37,7 +37,7 @@ const Payloads = () => {
             <input type="text" placeholder='Departure city' value={formData.passengers}
             onChange={(event)=>setFormData({...formData,passengers:event.target.value})} />  
 
-            <button type='submit' className='login-btn'>Confirm Booking</button>    
+            <button type='submit' id='login-btn'>Confirm Booking</button>    
          </form>
 
     </div>
