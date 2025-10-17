@@ -404,9 +404,9 @@
 
 }
 
-@media(max-width:540px){
+@media(max-width:770px){
     .footer-discover {
-      margin-top: 30vh;
+      margin-top: 20vh;
     }
      .footer-container-d {
         height: 60vh;

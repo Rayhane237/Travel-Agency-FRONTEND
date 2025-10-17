@@ -120,7 +120,6 @@ const Destinations = () => {
                         <h1 className='price'>$160</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div> 
                <div className='flight-item' >
@@ -131,7 +130,6 @@ const Destinations = () => {
                         <h1 className='price'>$230</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div>  
                <div className='flight-item' >
@@ -142,7 +140,6 @@ const Destinations = () => {
                         <h1 className='price'>$180</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div> 
                  <div className='flight-item' >
@@ -153,7 +150,6 @@ const Destinations = () => {
                         <h1 className='price'>$310</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div> 
                  <div className='flight-item' >
@@ -164,7 +160,6 @@ const Destinations = () => {
                         <h1 className='price'>$157</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div> 
                 <div className='flight-item' >
@@ -175,7 +170,6 @@ const Destinations = () => {
                         <h1 className='price'>$260</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div> 
                 <div className='flight-item' >
@@ -186,7 +180,6 @@ const Destinations = () => {
                         <h1 className='price'>$190</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div> 
                   <div className='flight-item' >
@@ -197,7 +190,6 @@ const Destinations = () => {
                         <h1 className='price'>$400</h1>
                     </div>
                   
-                      <button  className='f-btn'> Book Hotel</button>
                </div>
             </div> 
          

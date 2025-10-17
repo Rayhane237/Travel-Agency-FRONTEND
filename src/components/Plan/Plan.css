@@ -19,7 +19,7 @@
 }
 
 .navbar-container {
-    position: fixed;
+    position: sticky;
     background-color: rgb(255, 255, 255);
     height: 5vh;
     display: flex;
@@ -356,46 +356,45 @@ p ,h6 {
 .destination h5 {
     margin-top: 0.3rem;
 }
-.destinations-scroll-wrapper {
-      margin-top: 3%;
-      margin-bottom:3% ;
-      margin-left: 1rem;
-    position: relative;
-    scroll-behavior: smooth;
+.group {
+    height: 45vh;
+    position: sticky;
+    padding: 0 2.8rem 0 ;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 23px;
-    overflow-x: hidden ;
-    overflow-y: hidden;
-    
-    
+  scroll-behavior: smooth;
+  animation: spin 10s infinite linear;
+  background-color: rgba(247, 252, 250, 0.37);;
+  
 } 
 
+.scroll-wrapper {
+  overflow-x: auto;
+  height: 60vh; /* simulate long scroll */
+  position: relative;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to { translate: -100%;}
+}
+
+
+
  .destination {
-    background-color: rgb(234, 239, 239);
+    background-color: rgb(245, 249, 249);
     flex: 0 0 auto;
     margin: 1rem;
-    padding: 1%;
+    padding: 0.3rem;
     flex-wrap: wrap;
     border-radius: 12px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.235);
-} 
- .scroll-btn  {
-    position: relative;
-    
-    left: 5%;
-    border-radius: 5px;
-    border: none;
-    background-color:  rgb(40, 100, 98); 
-    color:  rgb(223, 231, 230);
-    width: 100px;
-    height: 40px;
-}
-
-.scroll-btn:hover {
-    color:  rgb(40, 100, 98); 
-    background-color:  rgb(223, 231, 230);;
-    z-index: 10;
-   
 } 
 
  bottom-text {
@@ -443,19 +442,16 @@ p ,h6 {
 
 
 }
-.destinations-scroll-wrapper {
-   
-      margin-top: 3%;
-      margin-bottom:3% ;
-      margin-right: 0.5%;
-    position: relative;
-    scroll-behavior: smooth;
-    display: flex;
-    gap: 23px;
-    overflow-x: hidden ;
-    overflow-y: hidden;
-    
-    
+.destinations-carousel {
+  display: flex;
+  gap: 23px;
+  position: relative;
+  scroll-behavior: smooth;
+  background-color: rgba(127, 255, 212, 0.37);
+  width: max-content; /* allows it to stretch horizontally */
+  will-change: transform;
+  
+  
 }
 
 html , body {
@@ -597,7 +593,8 @@ html , body {
 }
 .top-comments h1 {
     position: relative;
-    left: 20%;
+    text-align: center;
+    padding: 1rem;
 }
 
 .top-comments h4 {
@@ -633,18 +630,20 @@ html , body {
 .comment {
     position: relative;
      flex:0 0 auto;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: rgba(19, 29, 42, 0.612);
-    width: 350px;
-    height: auto;
+    width: 360px;
+    height: 30vh;
     border-radius: 12px;
     margin-left: 2rem;
 } 
+.comment h5 {
+  padding-top: 0.3rem;
+}
 
 .scroll-comment {
     position: relative;

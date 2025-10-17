@@ -54,66 +54,43 @@ const Comments = () => {
                                       <h1 style={{color:"orange"}}> <LiaStarSolid />  <LiaStarSolid /> <LiaStarSolid /> <LiaStarSolid /> </h1>
                                       <h3 style={{color:"white"}}>Salim</h3>
                                       <br />
-                                      <h4 style={{color:"white"}}>
+                                      <h5 style={{color:"white"}}>
                                            “From the moment I booked, everything felt seamless. The team was always one step ahead — I never had to worry about a thing.”
-                                      </h4>
+                                      </h5>
                                   </div>
                                    <div className='comment'>
                                       <h1 style={{color:"orange"}}> <LiaStarSolid /> <LiaStarSolid />  <LiaStarSolid /> <LiaStarSolid /> </h1>
                                        
                                       <h3 style={{color:"white"}}>Dan</h3>
                                       <br />
-                                      <h4 style={{color:"white"}}> Personalized Experience
-                                        “They didn’t just plan a trip — they crafted an experience tailored to my style. I felt seen, heard, and spoiled.”</h4>
+                                      <h5 style={{color:"white"}}> Personalized Experience
+                                        “They didn’t just plan a trip — they crafted an experience tailored to my style. I felt seen, heard, and spoiled.”</h5>
                                   </div>
                                    <div className='comment'>
                                       <h1 style={{color:"orange"}}> <LiaStarSolid /> <LiaStarSolid /> <LiaStarSolid />  <LiaStarSolid /> <LiaStarSolid /> </h1>
                                       
                                       <h3 style={{color:"white"}}>Lara</h3>
                                       <br />
-                                      <h4 style={{color:"white"}}>✈️  Stress-Free Planning
-                                           “I usually dread travel logistics, but this agency made it feel effortless. Flights, stays, excursions — all perfectly timed.”</h4>
+                                      <h5 style={{color:"white"}}>✈️  Stress-Free Planning
+                                           “I usually dread travel logistics, but this agency made it feel effortless. Flights, stays, excursions — all perfectly timed.”</h5>
                                   </div>
                                      <div className='comment'>
                                         <h1 style={{color:"orange"}}> <LiaStarSolid /><LiaStarSolid /> <LiaStarSolid />   <LiaStarSolid /> <LiaStarSolid /> </h1>
                                        
                                       <h3 style={{color:"white"}}>Sophia</h3>
-                                       <h4 style={{color:"white"}}>💬  Friendly & Responsive
-                                          “Every question I had was answered within minutes. The staff genuinely cared and made me feel like a VIP.”</h4>
+                                       <h5 style={{color:"white"}}>💬  Friendly & Responsive
+                                          “Every question I had was answered within minutes. The staff genuinely cared and made me feel like a VIP.”</h5>
                                     </div>
                                      <div className='comment'>
                                         <h1 style={{color:"orange"}}> <LiaStarSolid />   <LiaStarSolid /> <LiaStarSolid /> </h1>
                                      
                                       <h3 style={{color:"white"}}>Megan</h3>
-                                      <h4>. Business Travel Done Right
-                                           “As a frequent traveler, I need efficiency. They delivered — fast bookings, reliable transfers, and zero hiccups.”</h4>
+                                      <h5 style={{color:"white"}}>. Business Travel Done Right
+                                           “As a frequent traveler, I need efficiency. They delivered — fast bookings, reliable transfers, and zero hiccups.”</h5>
                                      </div>
                   
                        </div>
              
-{/*             
-           <div style={{color:"red"}} className='comments-container' ref={scrollRef} >
-                    
-                 <button className='scroll-comments' onClick={scrollLeft}> <FaArrowLeft />  </button>
-                    
-                  <div className='comment'>
-                    <h2>hi</h2>
-                     <h1 style={{color:"orange"}}> <LiaStarSolid />  <LiaStarSolid /> <LiaStarSolid /> </h1>
-                
-                 </div>
-                  <div className='comment'>
-                    <h2>looove</h2>
-                      <h1 style={{color:"orange"}}> <LiaStarSolid />  <LiaStarSolid /> <LiaStarSolid /> </h1>
-                  
-                 </div>
-               
-                   
-                 <button className='scroll-comments' onClick={scrollRight}> <FaArrowRight />  </button>
-                  
-            </div>
-
-
- */}
 
          </div>        
     </div>
