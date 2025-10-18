@@ -61,7 +61,7 @@ const HeaderAbout = () => {
                             
                                      <div className={`navbar-container ${sidebarOpen ? 'open' : ''}`}>
                                       {sidebarOpen && (
-                                       <button className='navbar-close-btn' onClick={toggleSidebar}>
+                                       <button  style={{color:"rgb(16, 92, 87)"}}  className='navbar-close-btn' onClick={toggleSidebar}>
                                               <RiCloseLargeFill />
                                           </button>
                                        )}

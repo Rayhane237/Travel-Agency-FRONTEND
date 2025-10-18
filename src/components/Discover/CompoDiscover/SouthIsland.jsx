@@ -17,7 +17,7 @@ const SouthIsland = () => {
                 padding:"0.5rem",
                 borderRadius:"13px" ,
                 position:'relative',
-                marginTop:"1.5rem"
+                marginTop:"1.3rem"
                 };
                    const backMap = {
                 backgroundImage: `url(${Map})`,
@@ -50,7 +50,7 @@ const SouthIsland = () => {
                     In the north is Abel Tasman National Park, known for its trails and ocean kayaking. Queenstown is famed for adventure sports like bungee jumping and skiing.</h5>
                      <br />
                        
-                            <div style={backItem} className='item' >
+                            <div style={backItem} id='item' >
                            </div>
                       
                 </div>

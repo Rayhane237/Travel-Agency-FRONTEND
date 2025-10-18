@@ -101,7 +101,7 @@
   font-size: 2rem;
   background: none;
   border: none;
-  color: rgb(255, 247, 247);
+  color: rgb(16, 92, 87);
   margin-left: 80%;
   cursor: pointer;
 }
@@ -216,6 +216,27 @@ form h5 {
 }
 
 
+@media(max-width:470px){
+  .flight-form input {
+    width: 300px;
+    
+  }
+   .flight-form label {
+    padding-right: 14rem;
+  }
+  
+  #confirm-btn {
+    width: 290px;
+  }
+
+
+  .flight-form h4 {
+    display: none;
+  }
+}
+
+
+
 /*-----------------------------Footer---------------------*/
 .footer-container-b {
     position: relative;
@@ -248,7 +269,7 @@ form h5 {
     margin-top: -15vh;
     padding-top: -2rem;
     max-width: 100%;
-    height: 70vh;
+    height: 40vh;
     background-color: rgb(36, 101, 99); 
 } 
 .footer-item-b{
@@ -269,7 +290,7 @@ form h5 {
 @media(max-width:540px){
     
      .footer-container-b {
-        margin-top: 10vh;
+        margin-top: 30vh;
         height: 60vh;
         padding-top: 2rem;
         padding-bottom: 1rem;

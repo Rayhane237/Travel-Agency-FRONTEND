@@ -217,8 +217,9 @@
 /*--------compo3 :Natural geographic features --*/
 
 .body-n{
-    margin-top: clamp(8vh,18vh ,2vh);
+    margin-top: 0rem;
     padding: 2rem;
+    background-color: rgba(0, 255, 255, 0);
 }
 
 .body-n h2 {
@@ -323,31 +324,33 @@
 
     
 .grid3 {
+  background-color: rgba(127, 255, 212, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 2rem;
-  padding: 1rem;
-  min-height: 100vh;
+  padding-top: 0rem;
+  min-height: 40vh;
   width: 100%;
 }
 
 } 
 
-@media(max-width:350px){
+@media(max-width:370px){
     .back-btn {
         margin-top: 0.3rem;
     }
 
     .body-n {
-        margin-top: 30vh;
-        padding: 0.3rem;
+        margin-top: 20vh;
+        background-color: rgba(255, 228, 196, 0);
+        padding: 0.6rem;
     }
 
     .natural-pics {
         flex-direction: column;
-        margin-left: -1.5rem;
+        margin-left: -1.2rem;
         
     }
 }
@@ -382,15 +385,14 @@
         margin-top: 27rem;
     }
 
-    .footer-container-d {
+       .footer-container-d {
     display: flex;
     grid-template-rows: 1fr 1fr ;
     gap: 1rem;
-   
-    margin-top: 20vh;
-    padding-top: -1rem;
+    margin-top: 10vh;
+    padding-top: 4rem;
     max-width: 100%;
-    height: 70vh;
+    height: 40vh;
     background-color: rgb(36, 101, 99); 
 } 
 .footer-item-d {
@@ -402,13 +404,42 @@
     margin-left: 2rem;
 } 
 
+ 
+
 }
 
 @media(max-width:770px){
     .footer-discover {
       margin-top: 20vh;
     }
-     .footer-container-d {
+       .footer-container-d {
+    display: flex;
+    grid-template-rows: 1fr 1fr ;
+    gap: 1rem;
+    margin-top: 10vh;
+    padding-top: 4rem;
+    max-width: 100%;
+    height: 40vh;
+    background-color: rgb(36, 101, 99); 
+} 
+.footer-item-d {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1vh;
+    margin-left: 2rem;
+} 
+
+
+}
+
+
+@media(max-width:540px){
+    .footer-aboutUs {
+      margin-top: 30vh;
+    }
+    .footer-container-d {
         height: 60vh;
         padding-top: 2rem;
         padding-bottom: 1rem;

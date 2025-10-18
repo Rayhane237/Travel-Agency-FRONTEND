@@ -18,7 +18,8 @@ const Discover = () => {
              <div >
                   <SouthIsland />
             </div>
-
+              <br />
+              
              <div>
               <NaturalFeatures />
             </div>

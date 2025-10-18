@@ -151,7 +151,7 @@
  
 .f-btn  {
     position: relative;
-   
+    
     border-radius: 5px;
     border: none;
     color: rgb(36, 102, 117); 
@@ -172,18 +172,21 @@
     position: relative;
     grid-template-rows: 1fr 1fr ;
     padding-left: 10%;
-    padding-top: 0.5rem;
+    padding-top: 0.3rem;
 }  
 
 .text-f h1 {
-    color: #f0f8ff;
+    color: #ffffff;
 }
 
-@media(max-width:350px) {
-    .text-f {
-        padding-top: 0;
+@media(max-width:370px) {
+    .f-btn {
+        position: relative;
+        margin-top: -2rem;
+        height: 33px;
        
     }
+
 }
 
 
