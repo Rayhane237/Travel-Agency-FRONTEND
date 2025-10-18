@@ -50,7 +50,7 @@ const Login = () => {
       email: data.email,
       password: data.passWord
     };
-
+  
     try {
       const res = await axios.post(`${import.meta.env.VITE_SERVER_HOST}/login`, clientData);
       if (res.status === 200) {
